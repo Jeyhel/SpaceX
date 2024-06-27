@@ -54,20 +54,28 @@ export const plusInfoRocket2C = async (plusInfo) => {
 export const plusInfoRocket3I = async (plusInfo) => {
     console.log(plusInfo);
 
-    document.querySelector("#country_rocket").innerHTML = 
-    /*html*/`
-    <div class ="country_rocket">
- 
+    console.log(plusInfo.flickr_images)
+    
+    const img = async ()=>{
+        let plantilla = '';
+        let imagenes = plusInfo.flickr_images;
+        imagenes.forEach(element => {
+        plantilla +=/*html*/`<img src= ${element} referrerpolicy="no-referrer">`;
+        });
+        return plantilla;
+    }
   
-    <img src="storage/img/farm01.jpg" referrer="no-referrer">
-    <img src="storage/img/farm02.jpg" referrer="no-referrer">
 
-    </div>
+    console.log(await img());
 
-        
-    `;
+
+    document.querySelector("#country_rocket").innerHTML = await img();
 
 };
+
+
+
+
 export const plusInfoRocketcircle1 = async (plusInfo) => {
     console.log(plusInfo);
 
@@ -94,24 +102,23 @@ export const plusInfoRocketcircle1 = async (plusInfo) => {
     </div>
  </div>` ;
 
-
-
-
 };
 
-// export const plusInfoRocketcircle2 = async (plusInfo) => {
-//     console.log(plusInfo);
+export const plusInfoRocketLines = async (plusInfo) => {
+    console.log(plusInfo);
 
-//     document.querySelector("#section__information__1").innerHTML = 
-//     /*html*/`
-//  <div class="item__progress__bar">
-//  <div class ="carousel__item"> 
-//     <h3>Diameter</h3>
-
-//     <p>Meters: ${plusInfo.height.meters }</p>
-//     <p>Feet: ${plusInfo.height.feet }</p>
-//  </div>` ;
-
-// };
-
-
+    document.querySelector("#information__2").innerHTML = 
+    /*html*/`
+    
+    <div class="information"> 
+    <h3>Engines</h3>
+    <br>
+            <p>Type: ${plusInfo.engines.type}</p>
+            <p>Version: ${plusInfo.engines.version}</p>
+            <p>Layout: ${plusInfo.engines.layout}</p>
+            <p>Propellant_1: ${plusInfo.engines.propellant_1}</p>
+            <p>Propellant_2: ${plusInfo.engines.propellant_2}</p>
+            <p>Thrust_to_weight: ${plusInfo.engines.thrust_to_weight}</p>  
+        </div>`;
+          
+};  
