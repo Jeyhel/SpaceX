@@ -84,19 +84,97 @@ export const getRocketInfoCountry = async(id) =>{
         method: "POST",
         body: JSON.stringify({
             
-                "query": {
+            "query": {
                 "_id": id
-              },
-                "options": {
-                 "select": "country"
+ 
+            },
+            "options": {
+              "select": "country"
               
-                }
-              })
-        };
+            }
+          })
+        }; 
     let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
     const { docs } = await res.json();
     console.log(docs);
     return docs[0];
 }
+
+export const getRocketInfoimages = async(id) =>{
+    let config = {
+        headers:{
+            "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+            
+            "query": {
+                "_id": id
+
+            },
+            "options": {
+              "select": "flickr_images"
+              
+            }
+          })
+        }; 
+    let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+    const { docs } = await res.json();
+    console.log(docs);
+    return docs[0];
+}
+
+
+export const getRocketInfocircle1 = async(id) =>{
+    let config = {
+        headers:{
+            "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+            
+            "query": {
+                "_id": id
+             
+              },
+              "options": {
+                "select": "height.meters height.feet diameter.meters diameter.feet"
+            
+              }
+          })
+        }; 
+    let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+    const { docs } = await res.json();
+    console.log(docs);
+    return docs[0];
+}
+
+// export const getRocketInfocircle2 = async(id) =>{
+//     let config = {
+//         headers:{
+//             "content-type": "application/json"
+//         },
+//         method: "POST",
+//         body: JSON.stringify({
+            
+//             "query": {
+//                 "_id": id
+             
+//               },
+//               "options": {
+//                 "select": "diameter.meters diameter.feet"
+            
+//               }
+//             })
+//         };
+//     let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+//     const { docs } = await res.json();
+//     console.log(docs);
+//     return docs[0];
+// }
+
+
+
+
 
 

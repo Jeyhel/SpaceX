@@ -129,7 +129,9 @@ body {
     font-size: 20px;
 }
 .info2{
-    margin-top: -190px;
+
+    margin-top: -200px;
+    height: 25vh;
  
   
 }
@@ -161,21 +163,41 @@ body {
     
 }
 
+.country{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .country h1{
-    margin-left: 30px;
-    font-size: 30px;
+ 
+    font-size: 40px;
     text-align: center;
     color: var(--color--two);
     
 }.country p {
     color: var(--color--two); 
+    text-align: center;
+    font-size: 25px;
 }
-/* #MenE{
-    width: 260px;
-    height: 260px;
-    margin-top: 30px;
-    margin-left: ;
-} */
+button{
+    background-color: #1b1d3b;
+    padding: 15px 20px;
+    border-radius: 40px;
+    border-color:#1b1d3b;
+}
+.country_rocket{
+    background-color: aqua;
+    width: 300%;
+    height: 200px;
+    overflow-x: scroll;
+   
+}
+.country_rocket img{
+
+    width: 300px;
+    height: 200px;
+}
 
 /* ID DEL COHETE */
 
@@ -320,6 +342,7 @@ h3{
 
 .section__information__1 {
     /* background: red; */
+    background-color: aqua;
     grid-area: section__header;
     display: flex;
     overflow-x: auto;
@@ -337,13 +360,20 @@ h3{
 }
 /*  */
 .item__progress__bar {
+
     color: var(--color--five);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     width: 150px;
     height: 150px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  
+    margin-top: 20px;
     border-radius: 50%;
     background: radial-gradient(
         closest-side, 
@@ -352,8 +382,46 @@ h3{
         conic-gradient(var(--color--three) 
         80%, 
         transparent 0);  
-    transform: rotate(180deg); 
-  }
+    transform: rotate(1deg); 
+}
+.section__information__1>.carousel__item2 {
+    /* flex: 1; */
+    min-width: 24%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  */
+.item__progress__bar2 {
+
+    color: var(--color--five);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  
+    margin-top: 20px;
+    border-radius: 50%;
+    background: radial-gradient(
+        closest-side, 
+        #1d1f38 85%, 
+        transparent 85% 100%), 
+        conic-gradient(var(--color--three) 
+        80%, 
+        transparent 0);  
+    transform: rotate(0.10deg); 
+}
+
+
+
+
 .progress__value{
     display: flex;
     flex-direction: column;
@@ -433,12 +501,12 @@ h3{
 }
 .section__image {
     /* background: orange; */
-    grid-area: colum__2;
     display: flex;
+    flex-direction: column;
     overflow-x: auto;
+    justify-content: center;
     text-align: center;
-    align-items: center;
-}
+}   
 
 .section__image>.carousel__item {
     /* background: violet; */

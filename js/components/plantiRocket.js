@@ -16,6 +16,8 @@ export const plusInfoRocket = async (plusInfo) => {
         <img src="storage/img/circle1.png">
          <div class="info__item">
      <h4>Stages</h4>
+     <br>
+     <br>
 
      <h3>Reusable: ${plusInfo.first_stage.reusable }</h3>
      <h3>Engines: ${plusInfo.first_stage.engines }</h3>
@@ -35,7 +37,7 @@ export const plusInfoRocket = async (plusInfo) => {
     </div>` ;
 
 }
-export const plusInfoRocket2 = async (plusInfo) => {
+export const plusInfoRocket2C = async (plusInfo) => {
     console.log(plusInfo);
 
     document.querySelector("#section__image").innerHTML = 
@@ -43,10 +45,73 @@ export const plusInfoRocket2 = async (plusInfo) => {
     <div class="country"> 
     <h1> Country</h1>
     <br>
-    <p>${plusInfo.country}</p>
- 
+    <button> <p>${plusInfo.country}</p> </button>
     </div>
-    
     `;
 
 };
+
+export const plusInfoRocket3I = async (plusInfo) => {
+    console.log(plusInfo);
+
+    document.querySelector("#country_rocket").innerHTML = 
+    /*html*/`
+    <div class ="country_rocket">
+ 
+  
+    <img src="storage/img/farm01.jpg" referrer="no-referrer">
+    <img src="storage/img/farm02.jpg" referrer="no-referrer">
+
+    </div>
+
+        
+    `;
+
+};
+export const plusInfoRocketcircle1 = async (plusInfo) => {
+    console.log(plusInfo);
+
+    document.querySelector("#section__information__1").innerHTML = 
+    /*html*/`
+ <div class="item__progress__bar">
+ <div class ="carousel__item"> 
+
+    <h3>Height</h3>
+
+    <p>Meters: ${plusInfo.height.meters }</p>
+    <p>Feet: ${plusInfo.height.feet }</p>
+
+    </div>
+</div>
+    
+ 
+ <div class="item__progress__bar2">
+    <div class ="carousel__item2"> 
+        <h3>Diameter</h3>
+
+        <p>Meters: ${plusInfo.diameter.meters }</p>
+        <p>Feet: ${plusInfo.diameter.feet }</p>
+    </div>
+ </div>` ;
+
+
+
+
+};
+
+// export const plusInfoRocketcircle2 = async (plusInfo) => {
+//     console.log(plusInfo);
+
+//     document.querySelector("#section__information__1").innerHTML = 
+//     /*html*/`
+//  <div class="item__progress__bar">
+//  <div class ="carousel__item"> 
+//     <h3>Diameter</h3>
+
+//     <p>Meters: ${plusInfo.height.meters }</p>
+//     <p>Feet: ${plusInfo.height.feet }</p>
+//  </div>` ;
+
+// };
+
+
