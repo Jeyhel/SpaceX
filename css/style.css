@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 
-    font-family: "Butti-Regular";
+    font-family: "Roboto-Regular";
 
 }
 
@@ -20,6 +20,14 @@ body {
     top: 10%;
     left: 37%;
     width: 25vw;
+    
+    
+}
+#MenE{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    width: 14vw;
     
     
 }
@@ -41,7 +49,7 @@ body {
 
 *::-webkit-scrollbar-thumb {
 
-    background-color: var(--color--one--rgba);
+    background-color: var(--color-1--rgba);
 }
 
 .header__title {
@@ -87,7 +95,56 @@ body {
     /* background: blue; */
     height: 75vh;
     color: var(--color--five);
-    margin-left: 15px
+    margin-left: 15px;
+    font-size: 17px;
+    
+}
+.description__item h3 {
+    color: var(--color-3);
+    font-size: 30px;
+}
+.info {
+
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 30px ;
+}
+.info img {
+ 
+    width: 60px;
+    height: 60px;
+    margin-top: -300px;
+}
+.info__item h4 {
+    color: var(--color-3);
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: -60px;
+}
+.info__item h3 {
+    color: var(--color-3);
+    margin-top: 9px;
+    font-size: 20px;
+}
+.info2{
+    margin-top: -190px;
+ 
+  
+}
+.info2 h3{
+    color: var(--color-3);
+    margin-top: 10px;
+    font-size: 20px;
+    padding-top: -90px;
+}
+.info2 img {
+ 
+    margin-top: 190px;
+    width: 60px;
+    height: 60px;
+    margin-left: -70px;
     
 }
 
@@ -104,6 +161,22 @@ body {
     
 }
 
+.country h1{
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--color--two);
+    
+}.country p {
+    color: var(--color--two); 
+}
+/* #MenE{
+    width: 260px;
+    height: 260px;
+    margin-top: 30px;
+    margin-left: ;
+} */
+
 /* ID DEL COHETE */
 
 .rocket__id{
@@ -112,7 +185,7 @@ body {
     padding-block: 10px;
     margin: 10px;
     font-weight: bold;
-    background-color: var(--color--one);
+    background-color: var(--color-1);
     border: 1px solid var(--color--two);
     border-radius: 10px
 }
@@ -363,6 +436,7 @@ h3{
     grid-area: colum__2;
     display: flex;
     overflow-x: auto;
+    text-align: center;
     align-items: center;
 }
 
@@ -378,7 +452,7 @@ h3{
     height: 190px;
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0px 0px 10px var(--color--one);
+    box-shadow: 0px 0px 10px var(--color-1);
 }
 
 .section__information__3 {
@@ -468,7 +542,7 @@ h3{
 
 .footer ul {
     grid-area: footer__menu;
-    background: var(--color--one);
+    background: var(--color-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -490,7 +564,7 @@ h3{
     height: 0;
     border-left: 0px solid transparent;
     border-right: 48px solid transparent;
-    border-bottom: 70px solid var(--color--one);
+    border-bottom: 70px solid var(--color-1);
 }
 .footer ul::before{
     content: "";
@@ -502,7 +576,7 @@ h3{
     height: 0;
     border-left: 48px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 70px solid  var(--color--one);
+    border-bottom: 70px solid  var(--color-1);
     /* border-top-right-radius: 30px; */
 }
 .footer ul li {
@@ -532,11 +606,12 @@ h3{
 }
 
 .information__buttom {
-    /* background: #00ff84; */
+    background-color: #1b1d3b;
+    border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 50px;
 }
 
 .buttom__paginacion {
@@ -556,7 +631,7 @@ h3{
 }
 
 .buttom__paginacion a:hover:not(.activo) {
-    background-color: var(--color--one--rgba);
+    background-color: var(--color-1--rgba);
 }
 
 .information__container {
@@ -587,7 +662,7 @@ h3{
 
 progress[value] {
     --color: var(--color--three);
-    --background: var(--color--one--rgb);
+    --background: var(--color-1--rgb);
     background: var(--background);
 }
 

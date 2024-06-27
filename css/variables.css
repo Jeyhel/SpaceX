@@ -1,12 +1,12 @@
 :root{
-    --color--one: #14162C;
-    --color--one--rgba: #191b3fdf;
-    --color--two: #9499c3;
+   --color-1: #8672fa;
+   --color-1--rgba: #191b3fdf;
+    --color--two: #fdfdfdd2;
     --color--three: #298bfe;
-    --color--four: #e52d2d;
+    --color--four: #e5582d;
     --color--five: #ffffff;
     --color--six: #ffd733;
-    --color--purple: #76748B;
+    --color--purple: #c3c0e4;
     --color--purpleDark: #2e284e;
     --color--ten:  #492ee286;
 
