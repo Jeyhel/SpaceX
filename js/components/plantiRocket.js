@@ -109,38 +109,51 @@ export const plusInfoRocketInfodown1 = async (plusInfo) => {
 
     document.querySelector("#information__table__1").innerHTML = 
     /*html*/`
-    <h3>Engines</h3>
+    <h3>SECOND STAGES</h3>
     <hr>
-    <br>
     <div class="infoDown1"> 
-    
-                <p>Type: ${plusInfo.engines.type}</p>
-                <p>Version: ${plusInfo.engines.version}</p>
-                <p>Layout: ${plusInfo.engines.layout}</p>
-                <p>Propellant_1: ${plusInfo.engines.propellant_1}</p>
-                <p>Propellant_2: ${plusInfo.engines.propellant_2}</p>
-                <p>Thrust_to_weight: ${plusInfo.engines.thrust_to_weight}</p> 
-    </div>`;
+            <p> Thrust </p>
+            <p> kN (${plusInfo.second_stage.thrust.kN }) LBF (${plusInfo.second_stage.thrust.lbf})<p>
+        </div> 
+            <hr>
+        <div class="infoDown01"> 
+            <p> Payloads </p> 
+            <p>  Composite Fairing</p> 
+            <p> Height: ----Meters (${plusInfo.second_stage.payloads.composite_fairing.height.meters}) ---Feet (${plusInfo.second_stage.payloads.composite_fairing.height.feet})</p> 
+            <br><hr>
+        </div>
+        <div class="infoDown02"> 
+       
+        <p> Option_1 "(${plusInfo.second_stage.payloads.option_1})"</p>
+       
+        <br><hr>
+    </div> `;
           
 };  
+
 
 export const plusInfoRocketInfodown2 = async (plusInfo) => {
     console.log(plusInfo);
 
     document.querySelector("#information__table__2").innerHTML = 
     /*html*/`
-    <h3>Engines</h3>
+    <h3>payload_weights</h3>
     <hr>
     <br>
-    <div class="infoDown1"> 
-    
-                <p>Type: ${plusInfo.engines.type}</p>
-                <p>Version: ${plusInfo.engines.version}</p>
-                <p>Layout: ${plusInfo.engines.layout}</p>
-                <p>Propellant_1: ${plusInfo.engines.propellant_1}</p>
-                <p>Propellant_2: ${plusInfo.engines.propellant_2}</p>
-                <p>Thrust_to_weight: ${plusInfo.engines.thrust_to_weight}</p> 
-    </div>`;
+    <div class="infoDown2"> 
+            <p> id ${plusInfo.id} </p>
+            <p> id ${plusInfo.name} </p>
+        </div> 
+            <hr>
+        <div class="infoDown002"> 
+        <p> id ${plusInfo.id} </p>
+           
+        </div>
+        <div class="infoDown003"> 
+
+        <p> id ${plusInfo.id} </p>
+        <br><hr>
+    </div> `;
           
 };  
 
@@ -151,7 +164,7 @@ export const plusInfoRocketLines = async (plusInfo) => {
     document.querySelector("#information__2").innerHTML = 
     /*html*/`
     
-    <div class="information"> 
+    <div class=""> 
     <h3>Engines</h3>
     <br>
             <p>Type: ${plusInfo.engines.type}</p>

@@ -748,9 +748,56 @@ h3{
     color: aliceblue;
 
 }
-.infoDown1 p, h3 {
-    font-size: 20px;
+.information__table__1 h3{
+    font-size: 25px;
     color: aliceblue;
+
+}
+.information__table__1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoDown1 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+
+}
+.infoDown01 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.infoDown02 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+
+
+.infoDown2 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+
+}
+.infoDown002 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.infoDown003 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
 
 }
 

@@ -161,11 +161,11 @@ export const getRocketInfoDownIzq = async(id) =>{
              
             },
             "options": {
-              "select": "engines.type engines.version  engines.layout   engines.propellant_1   engines.propellant_2 engines.thrust_to_weight"
-            
-            }
-          })
-        }; 
+                "select": "second_stage.thrust.kN second_stage.thrust.lbf second_stage.payloads.composite_fairing.height height.meters height.feet second_stage.composite_fairing.diameter diameter.meters diameter.feet second_stage.payloads.option_1"
+                }
+                
+              })
+            }; 
     let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
     const { docs } = await res.json();
     console.log(docs);
@@ -185,11 +185,12 @@ export const getRocketInfoDownDer = async(id) =>{
              
             },
             "options": {
-              "select": "engines.type engines.version  engines.layout   engines.propellant_1   engines.propellant_2 engines.thrust_to_weight"
+                "select": "payload_weights.id payload_weights.name payload_weights.kg payload_weights.lb "
             
-            }
-          })
-        }; 
+              } 
+         })
+     }; 
+            
     let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
     const { docs } = await res.json();
     console.log(docs);
