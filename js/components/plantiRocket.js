@@ -104,6 +104,47 @@ export const plusInfoRocketcircle1 = async (plusInfo) => {
 
 };
 
+export const plusInfoRocketInfodown1 = async (plusInfo) => {
+    console.log(plusInfo);
+
+    document.querySelector("#information__table__1").innerHTML = 
+    /*html*/`
+    <h3>Engines</h3>
+    <hr>
+    <br>
+    <div class="infoDown1"> 
+    
+                <p>Type: ${plusInfo.engines.type}</p>
+                <p>Version: ${plusInfo.engines.version}</p>
+                <p>Layout: ${plusInfo.engines.layout}</p>
+                <p>Propellant_1: ${plusInfo.engines.propellant_1}</p>
+                <p>Propellant_2: ${plusInfo.engines.propellant_2}</p>
+                <p>Thrust_to_weight: ${plusInfo.engines.thrust_to_weight}</p> 
+    </div>`;
+          
+};  
+
+export const plusInfoRocketInfodown2 = async (plusInfo) => {
+    console.log(plusInfo);
+
+    document.querySelector("#information__table__2").innerHTML = 
+    /*html*/`
+    <h3>Engines</h3>
+    <hr>
+    <br>
+    <div class="infoDown1"> 
+    
+                <p>Type: ${plusInfo.engines.type}</p>
+                <p>Version: ${plusInfo.engines.version}</p>
+                <p>Layout: ${plusInfo.engines.layout}</p>
+                <p>Propellant_1: ${plusInfo.engines.propellant_1}</p>
+                <p>Propellant_2: ${plusInfo.engines.propellant_2}</p>
+                <p>Thrust_to_weight: ${plusInfo.engines.thrust_to_weight}</p> 
+    </div>`;
+          
+};  
+
+
 export const plusInfoRocketLines = async (plusInfo) => {
     console.log(plusInfo);
 

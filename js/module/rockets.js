@@ -148,6 +148,57 @@ export const getRocketInfocircle1 = async(id) =>{
     console.log(docs);
     return docs[0];
 }
+export const getRocketInfoDownIzq = async(id) =>{
+    let config = {
+        headers:{
+            "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+            
+            "query": {
+                "_id": id
+             
+            },
+            "options": {
+              "select": "engines.type engines.version  engines.layout   engines.propellant_1   engines.propellant_2 engines.thrust_to_weight"
+            
+            }
+          })
+        }; 
+    let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+    const { docs } = await res.json();
+    console.log(docs);
+    return docs[0];
+}
+
+export const getRocketInfoDownDer = async(id) =>{
+    let config = {
+        headers:{
+            "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+            
+            "query": {
+                "_id": id
+             
+            },
+            "options": {
+              "select": "engines.type engines.version  engines.layout   engines.propellant_1   engines.propellant_2 engines.thrust_to_weight"
+            
+            }
+          })
+        }; 
+    let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+    const { docs } = await res.json();
+    console.log(docs);
+    return docs[0];
+}
+
+
+
+
 export const getRocketInfoLines = async(id) =>{
     let config = {
         headers:{

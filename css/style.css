@@ -342,7 +342,7 @@ h3{
 
 .section__information__1 {
     /* background: red; */
-    background-color: aqua;
+
     grid-area: section__header;
     display: flex;
     overflow-x: auto;
@@ -469,21 +469,29 @@ h3{
 
 .information__table__1 {
     width: 85%;
+    border-radius: 20px ;
     margin: 10px auto;
-    /* background: darkblue; */
     grid-area: table__colum__1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-2);
+    border: var(--color-1) 5px solid;
+    padding: 10px;
 }
-/* .information__table__1 h3{
+.information__table__1 h3{
     text-transform: uppercase;
-    padding: 0 25px;
     margin-bottom: 5px;
     color: var(--color--two);
-} */
-/* .information__table__1 hr{
+    display: flex;
+    flex-direction: column;
+}
+.information__table__1 hr{
     margin: 0 auto;
     width: 90%;
     border-color: var(--color--two);
-} */
+    display: flex;
+   
+}
 .table__container__1{
     /* background: orange; */
     height: 160px;
@@ -555,9 +563,15 @@ h3{
 .information__table__2 {
     width: 85%;
     margin: 10px auto;
-    /* background: darkblue; */
+    border-radius: 20px ;
     grid-area: table__colum__2;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-2);
+    border: var(--color-1) 5px solid;
+    padding: 10px;
 }
+
 .information__table__2 h3{
     text-transform: uppercase;
     padding: 0 25px;
@@ -734,6 +748,13 @@ h3{
     color: aliceblue;
 
 }
+.infoDown1 p, h3 {
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+
 
 progress[value] {
     --color: var(--color--three);

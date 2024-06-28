@@ -1,6 +1,6 @@
 
-import { getAllRocketsId, getOneNameRock, getRocketInfo, getRocketInfoCountry, getRocketInfoimages, getRocketInfocircle1, getRocketInfoLines } from "../module/rockets.js"
-import { nameRocket, plusInfoRocket, plusInfoRocket2C, plusInfoRocket3I, plusInfoRocketcircle1, plusInfoRocketLines } from "./plantiRocket.js";
+import { getAllRocketsId, getOneNameRock, getRocketInfo, getRocketInfoCountry, getRocketInfoimages, getRocketInfocircle1, getRocketInfoDownIzq, getRocketInfoDownDer, getRocketInfoLines } from "../module/rockets.js"
+import { nameRocket, plusInfoRocket, plusInfoRocket2C, plusInfoRocket3I, plusInfoRocketcircle1, plusInfoRocketInfodown1, plusInfoRocketInfodown2, plusInfoRocketLines } from "./plantiRocket.js";
 
 
 export const pageRockets = async () => {
@@ -36,11 +36,18 @@ export const setupPagination = () => {
         const rocketCircle1 = await getRocketInfocircle1(id);
         await plusInfoRocketcircle1 (rocketCircle1)
         console.log(rocketCircle1);
+        
+        const rocketDown1 = await getRocketInfoDownIzq(id);
+        await plusInfoRocketInfodown1 (rocketDown1)
+        console.log(rocketDown1);
+
+        const rocketDown2 = await getRocketInfoDownDer(id);
+        await plusInfoRocketInfodown2 (rocketDown2)
+        console.log(rocketDown2);
 
         const rocketLines = await getRocketInfoLines(id);
         await plusInfoRocketLines (rocketLines)
         console.log(rocketLines);
-
         
     });
 }
