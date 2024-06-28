@@ -13,6 +13,8 @@ body {
 
     background-image: url(../storage/img/background.jpg);
 
+    font-family: "Roboto-Regular";
+
 }
 
 #rocketImageCenter{
@@ -90,18 +92,34 @@ body {
     /* background: red; */
     grid-area: nav__1;
 }
-
+#circlee1{
+    width: 50px;
+    margin-top: 102px;
+    position: absolute;
+    
+}
+#circlee2{
+    width: 50px;
+    margin-top: 275px ;
+    position: absolute;
+    
+}
 .description__item {
-    /* background: blue; */
+ 
     height: 75vh;
     color: var(--color--five);
     margin-left: 15px;
     font-size: 17px;
+    margin-left: 50px;
     
 }
 .description__item h3 {
     color: var(--color-3);
     font-size: 30px;
+}
+.description__item p{
+    color: var(--color-3);
+    font-size: 19px;
 }
 .info {
 
@@ -109,7 +127,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin: 30px ;
+    margin: 50px ;
 }
 .info img {
  
@@ -119,13 +137,13 @@ body {
 }
 .info__item h4 {
     color: var(--color-3);
-    margin-top: 10px;
+    margin-top: -25px;
     font-size: 30px;
-    margin-left: -60px;
+   
 }
-.info__item h3 {
+.info__item p {
     color: var(--color-3);
-    margin-top: 9px;
+    margin-top: 10px;
     font-size: 20px;
 }
 .info2{
@@ -135,19 +153,11 @@ body {
  
   
 }
-.info2 h3{
+.info2 p{
     color: var(--color-3);
     margin-top: 10px;
     font-size: 20px;
-    padding-top: -90px;
-}
-.info2 img {
- 
-    margin-top: 190px;
-    width: 60px;
-    height: 60px;
-    margin-left: -70px;
-    
+   
 }
 
 .rocket__image{
@@ -379,7 +389,7 @@ h3{
         closest-side, 
         #1d1f38 85%, 
         transparent 85% 100%), 
-        conic-gradient(var(--color--three) 
+        conic-gradient(var(--color-1) 
         80%, 
         transparent 0);  
     transform: rotate(1deg); 
@@ -391,6 +401,21 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section__information__1>.carousel__item3 {
+    /* flex: 1; */
+    min-width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sucess_rate_rocket{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 150px;
+    height: 150px;
+
 }
 /*  */
 .item__progress__bar2 {
@@ -414,7 +439,33 @@ h3{
         closest-side, 
         #1d1f38 85%, 
         transparent 85% 100%), 
-        conic-gradient(var(--color--three) 
+        conic-gradient(var(--color-1) 
+        80%, 
+        transparent 0);  
+    transform: rotate(0.10deg); 
+}
+
+.item__progress__bar3 {
+
+    
+    color: var(--color--five);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    border-radius: 50%;
+    background: radial-gradient(
+        closest-side, 
+        #1d1f38 85%, 
+        transparent 85% 100%), 
+        conic-gradient(var(--color-1) 
         80%, 
         transparent 0);  
     transform: rotate(0.10deg); 
@@ -437,7 +488,11 @@ h3{
     grid-template-areas:
         "colum__1 colum__2 colum__3";
 }
+#information__2 h3{
+    font-size: 30px;
+    color: aliceblue;
 
+}
 .section__information__2 {
     /* background: blue; */
     grid-area: colum__1;
@@ -469,17 +524,19 @@ h3{
 
 .information__table__1 {
     width: 85%;
+    height: 256px;
     border-radius: 20px ;
     margin: 10px auto;
     grid-area: table__colum__1;
     display: flex;
     flex-direction: column;
     background-color: var(--color-2);
+    overflow-y: scroll;
     border: var(--color-1) 5px solid;
     padding: 10px;
 }
 .information__table__1 h3{
-    text-transform: uppercase;
+ 
     margin-bottom: 5px;
     color: var(--color--two);
     display: flex;
@@ -546,7 +603,7 @@ h3{
 .section__information__3 div:first-child {
     /* background: #d9ff00; */
     grid-area: carusel__colum__2;
-    display: flex;
+
     overflow-x: auto;
     gap: 10px;
     justify-content: space-evenly;
@@ -562,18 +619,20 @@ h3{
 }
 .information__table__2 {
     width: 85%;
+    height: 260px;
     margin: 10px auto;
     border-radius: 20px ;
     grid-area: table__colum__2;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
     background-color: var(--color-2);
     border: var(--color-1) 5px solid;
     padding: 10px;
 }
 
 .information__table__2 h3{
-    text-transform: uppercase;
+
     padding: 0 25px;
     margin-bottom: 5px;
     color: var(--color--two);
@@ -758,20 +817,48 @@ h3{
     justify-content: space-between;
 }
 
-.infoDown1 p {
+.General{
+    background-color: blue;
+    display: flex;  
+    flex-direction: column;
+
+}
+
+/* infoIzquierda */
+.information1 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
 
 }
-.infoDown01 p {
+.information01 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
   
 
 }
-.infoDown02 p {
+.information02 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.information03 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+
+}
+.information04 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.information05 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
@@ -779,6 +866,7 @@ h3{
 
 }
 
+/* infoderecha */
 
 .infoDown2 p {
     margin-left: 10px;
@@ -801,10 +889,31 @@ h3{
 
 }
 
+/*info de las barras*/
 
+.infoDown1 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+
+}
+.infoDown01 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.infoDown02 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
 
 progress[value] {
-    --color: var(--color--three);
+    --color: var(--color-1);
     --background: var(--color-1--rgb);
     background: var(--background);
 }
@@ -828,12 +937,12 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value {
     border-radius: 10em;
-    background: var(--color);
+    background: var(--color-1);
 }
 
 progress[value]::-moz-progress-bar {
     border-radius: 10em;
-    background: var(--color);
+    background: var(--color-1);
 }
 
 
