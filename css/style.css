@@ -11,7 +11,8 @@
 
 body {
 
-    background-image: url(../storage/img/background.jpg);
+    background-image: url(../storage/img/background2.jpg);
+ 
 
     font-family: "Roboto-Regular";
 
@@ -25,14 +26,116 @@ body {
     
     
 }
-#MenE{
+#gif2moon1{
     position: absolute;
-    top: 50%;
-    left: 27%;
-    width: 14vw;
-    
+    top:17%;
+    left: 90%;
+    width: 4vw;
+    height: 4vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+}
+#gif2moon1:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+#gif2moon2{
+    position: absolute;
+    top:30%;
+    left: 90%;
+    width: 4vw;
+    height: 4vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+}
+#gif2moon2:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+#gif2moon3{
+    position: absolute;
+    top:42%;
+    left: 90%;
+    width: 4vw;
+    height: 4vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+}
+#gif2moon3:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+#gif1world{
+    position: absolute;
+    top:55%;
+    left: 80%;
+    width: 18vw;
+    height: 12vw;  
+    border-radius: 20px;   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#gif1world:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+#gifHand{
+    position: absolute;
+    left: 19vw; 
+    width: 8vw;
+    height: 10vw; 
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#gifHand:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+#gifRayo{
+    position: absolute;
+    left: 50vw; 
+    width: 8vw;
+    height: 10vw; 
+  
+}
+#gifRayo2{
+    position: absolute;
+    margin-top: 40px;
+    left: 50vw; 
+    width: 8vw;
+    height: 10vw; 
     
 }
+#gifRayo3{
+    position: absolute;
+    margin-top: 60px;
+    left: 50vw; 
+    width: 8vw;
+    height: 10vw; 
+  
+}
+#gifRayo4{
+    position: absolute;
+    margin-top: 310px;
+    left: 2vw; 
+    width: 3vw;
+    height: 3vw; 
+  
+}
+#gifRayo5{
+    position: absolute;
+    margin-top: 490px;
+    left: 2vw; 
+    width: 3vw;
+    height: 3vw; 
+  
+}
+
+#gif3men{
+    position: absolute;
+    margin-top: 750px;
+    left: 1vw; 
+    width: 3vw;
+    height: 4vw; 
+
+}
+
 
 *::-webkit-scrollbar {
     height: 12px;
@@ -92,14 +195,19 @@ body {
     /* background: red; */
     grid-area: nav__1;
 }
-#circlee1{
+.link{
+
+}
+#icono1{
     width: 50px;
-    margin-top: 102px;
+    height: 55px;
+    margin-top: 110px;
     position: absolute;
     
 }
-#circlee2{
+#icono2{
     width: 50px;
+    height: 55px;
     margin-top: 275px ;
     position: absolute;
     
@@ -179,6 +287,7 @@ body {
     text-align: center;
 }
 
+
 .country h1{
  
     font-size: 40px;
@@ -189,24 +298,30 @@ body {
     color: var(--color--two); 
     text-align: center;
     font-size: 25px;
+
 }
 button{
     background-color: #1b1d3b;
     padding: 15px 20px;
-    border-radius: 40px;
-    border-color:#1b1d3b;
+    border-radius: 65px;
+    border: 5px solid var(--color-1);
 }
-.country_rocket{
-    background-color: aqua;
-    width: 300%;
-    height: 200px;
+.section__image{
+ 
+    display: flex;
+    margin-top: 200px; 
+    width: 100%;
+    height: 300px;
     overflow-x: scroll;
+    
    
 }
-.country_rocket img{
+.section__image img{
 
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    border: var(--color-1) 5px solid;
 }
 
 /* ID DEL COHETE */
@@ -393,7 +508,9 @@ h3{
         80%, 
         transparent 0);  
     transform: rotate(1deg); 
+   
 }
+
 .section__information__1>.carousel__item2 {
     /* flex: 1; */
     min-width: 24%;
@@ -440,7 +557,7 @@ h3{
         #1d1f38 85%, 
         transparent 85% 100%), 
         conic-gradient(var(--color-1) 
-        80%, 
+        70%, 
         transparent 0);  
     transform: rotate(0.10deg); 
 }
@@ -466,7 +583,7 @@ h3{
         #1d1f38 85%, 
         transparent 85% 100%), 
         conic-gradient(var(--color-1) 
-        80%, 
+        60%, 
         transparent 0);  
     transform: rotate(0.10deg); 
 }
@@ -524,7 +641,7 @@ h3{
 
 .information__table__1 {
     width: 85%;
-    height: 256px;
+    height: 240px;
     border-radius: 20px ;
     margin: 10px auto;
     grid-area: table__colum__1;
@@ -534,6 +651,7 @@ h3{
     overflow-y: scroll;
     border: var(--color-1) 5px solid;
     padding: 10px;
+   
 }
 .information__table__1 h3{
  
@@ -565,20 +683,13 @@ h3{
 }
 .table__container__1 div strong{
     color: var(--color--five);
-}
-.section__image {
-    /* background: orange; */
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-    justify-content: center;
-    text-align: center;
-}   
+} 
 
 .section__image>.carousel__item {
     /* background: violet; */
     text-align: center;
     margin: 0 10px;
+    
 
 }
 
@@ -625,12 +736,16 @@ h3{
     grid-area: table__colum__2;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow-y: scroll;
     background-color: var(--color-2);
     border: var(--color-1) 5px solid;
     padding: 10px;
 }
-
+.information__table__2 p{
+    color: aliceblue;
+    margin-left: 10px;
+}
 .information__table__2 h3{
 
     padding: 0 25px;
@@ -747,6 +862,11 @@ h3{
     overflow-y: auto;
     height: 75vh;
 }
+#pagination{
+    gap:40px; 
+    margin-left: 100px;
+
+}
 
 .information__buttom {
     background-color: #c3c0e4;
@@ -754,6 +874,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
     height: 50px;
 }
 
@@ -765,6 +886,7 @@ h3{
     color: var(--color--five);
     text-decoration: none;
     float: left;
+    gap:30px; 
     padding: 8px 16px;
 }
 
@@ -825,17 +947,32 @@ h3{
 }
 
 /* infoIzquierda */
+.information1{
+    display: flex;
+    justify-content: space-between; 
+
+}
 .information1 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
-
+    
+    
+}
+.information01{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -199px;
 }
 .information01 p {
-    margin-left: 10px;
+  
     font-size: 17px;
     color: aliceblue;
-  
+}
+.information02 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -80px;
 
 }
 .information02 p {
@@ -845,10 +982,23 @@ h3{
   
 
 }
+.information03 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -70px;
+    
+}
 .information03 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
+    
+
+}
+.information04{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -42px;
 
 }
 .information04 p {
@@ -867,27 +1017,79 @@ h3{
 }
 
 /* infoderecha */
-
+.infoDown2{
+    display: flex;
+    justify-content: space-between;
+  
+}
 .infoDown2 p {
-    margin-left: 10px;
+ 
+    font-size: 17px;
+    color: aliceblue;
+}
+
+.infoDown20{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.infoDown20 p {
+ 
+    font-size: 17px;
+    color: aliceblue;
+ 
+
+
+}
+.infoDown002{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.infoDown002 p {
+ 
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.infoDown0022{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.infoDown0022 p {
+ 
     font-size: 17px;
     color: aliceblue;
 
 }
-.infoDown002 p {
-    margin-left: 10px;
-    font-size: 17px;
-    color: aliceblue;
-  
+.infoDown003{
+    display: flex;
+    justify-content: space-between;
 
 }
 .infoDown003 p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;
+
+}
+.infoDown0030{
+    display: flex;
+    justify-content: space-between;
+
+}
+.infoDown0030 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
   
 
 }
+
 
 /*info de las barras*/
 
@@ -905,6 +1107,13 @@ h3{
 
 }
 .infoDown02 p {
+    margin-left: 10px;
+    font-size: 17px;
+    color: aliceblue;
+  
+
+}
+.infoDown02u p {
     margin-left: 10px;
     font-size: 17px;
     color: aliceblue;

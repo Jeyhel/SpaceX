@@ -64,7 +64,7 @@ export const getRocketInfo = async(id) =>{
                 "_id": id
               },
                 "options": {
-                    "select": "description first_stage.reusable first_stage.engines first_stage.fuel_amount_tons first_stage.burn_time_sec second_stage.reusable second_stage.engines second_stage.fuel_amount_tons second_stage.burn_time_sec"
+                    "select": "description first_stage.reusable first_stage.engines first_stage.fuel_amount_tons first_stage.burn_time_sec second_stage.reusable second_stage.engines second_stage.fuel_amount_tons second_stage.burn_time_sec wikipedia"
               
                 }
             })
@@ -161,11 +161,14 @@ export const getRocketInfocircle3 = async(id) =>{
              
               },
               "options": {
-                "select": "height.meters height.feet diameter.meters diameter.feet"
-            
-              }
-          })
-        }; 
+                "options": {
+                    "select": "mass.kg mass.lb"
+              
+                  }
+               }
+            })
+            };
+             
     let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
     const { docs } = await res.json();
     console.log(docs);
