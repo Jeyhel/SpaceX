@@ -12,7 +12,7 @@ export const clearInformation = () => {
     document.querySelector(".section__information__1").innerHTML = "";
     document.querySelector(".information__table__1").innerHTML = "";
     document.querySelector("#country_rocket").innerHTML = "";
-    //document.querySelector("#second-stage").innerHTML = "";
+    document.querySelector("#sucess_rate_rocket").innerHTML = "";
     document.querySelector(".information__table__2").innerHTML = "";
     document.querySelector(".section__image").innerHTML = "";
     document.querySelector(".information__item").innerHTML = "";

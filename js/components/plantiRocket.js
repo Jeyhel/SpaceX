@@ -34,8 +34,10 @@ export const plusInfoRocket = async (plusInfo) => {
      <p>Fuel_amount_tons: ${plusInfo.second_stage.fuel_amount_tons}</p>
      <p>Burn_time_sec: ${plusInfo.second_stage.burn_time_sec }</p>
 
-     <p>wikipedia:<p>
-     <a href = "${plusInfo.wikipedia}"> </a>
+     <a href = "${plusInfo.wikipedia}"> 
+     <p>Wikipedia....<p>
+     </a>
+     <img id="gif3men" src="./storage/img/gif3.gif" alt="">
             
     </div>` ;
 
@@ -89,6 +91,7 @@ export const plusInfoRocketcircle1 = async (plusInfo) => {
     /*html*/`
  <div class="item__progress__bar">
  <div class ="carousel__item"> 
+ <img id="gifHand" src="./storage/img/gifhand.gif" alt="">
 
     <h3>Height</h3>
 
@@ -227,16 +230,20 @@ export const plusInfoRocketLines = async (plusInfo) => {
     console.log(plusInfo);
 
     document.querySelector("#information__2").innerHTML = 
+
     /*html*/`  
     <h3> Payloads </h3>
     <br>
     
     <div class="infoDown1">
+    <img id="gif2moon1" src="./storage/img/gif2.gif" alt="">
+    <img id="gif2moon2" src="./storage/img/gif2.gif" alt="">
+    <img id="gif2moon3" src="./storage/img/gif2.gif" alt="">
 
     <p> Thrust </p>
     <p> kN (${plusInfo.second_stage.thrust.kN }) </p>
     <p>  <progress> <p>
-    <p>LBF (${plusInfo.second_stage.thrust.lbf})</p>
+    <p> LBF (${plusInfo.second_stage.thrust.lbf})</p>
     </div>     
     
     <br><br>
@@ -250,6 +257,7 @@ export const plusInfoRocketLines = async (plusInfo) => {
     </div>
     <br><br>
     <div class="infoDown02"> 
+    <img id="gif1world" src="./storage/img/gif1.gif" alt="">
         <p>Option 1 </p>
         <p> <progress> </p>
         <p>(${plusInfo.second_stage.payloads.option_1})</p>
