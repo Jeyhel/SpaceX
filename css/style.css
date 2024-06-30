@@ -864,8 +864,8 @@ h3{
     height: 75vh;
 }
 #pagination{
-    gap:40px; 
-    margin-left: 100px;
+    gap:20px; 
+    margin-left: 0px;
 
 }
 
@@ -875,7 +875,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 80%;
     height: 50px;
 }
 

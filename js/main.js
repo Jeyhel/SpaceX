@@ -2,7 +2,12 @@
 // import {getAllRockets,OneNameRock, RocketDescription, getAllRocketsId, } from "./module/rockets.js"
 
 
+import { XDXDLOLOL } from "./components/pagination.js";
+
 import { pageRockets, setupPaginationRockets, paginationCapsules, setUpPaginationCapsules, } from "./components/pagination.js";
+
+
+
 
 
 
@@ -41,6 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     clearInformation(); 
     document.querySelector("#pagination").innerHTML = await pageRockets();
+    await XDXDLOLOL("5e9d0d95eda69955f709d1eb");
     setupPaginationRockets();
 });
 

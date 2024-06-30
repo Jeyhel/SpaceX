@@ -123,8 +123,8 @@ export const plusInfoRocketcircle3 = async (plusInfo) => {
     <div class ="carousel__item3"> 
     <h3>Mass</h3>
 
-        <p>kg: ${plusInfo.mass.kg }</p>
-        <p>Lb: ${plusInfo.mass.lb }</p>
+        <p>kg: ${plusInfo.mass.kg}</p>
+        <p>Lb: ${plusInfo.mass.lb}</p>
     </div>
  </div>` ;
 
@@ -261,6 +261,8 @@ export const plusInfoRocketLines = async (plusInfo) => {
         <p>Option 1 </p>
         <p> <progress> </p>
         <p>(${plusInfo.second_stage.payloads.option_1})</p>
+    
+
     </div> `;
 
     

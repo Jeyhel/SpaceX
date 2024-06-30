@@ -59,6 +59,45 @@ export const setupPaginationRockets = async() => {
     }
 )}
     
+export const XDXDLOLOL = async(id) => {
+     
+        const rocketName  = await getOneNameRock(id);
+        await nameRocket(rocketName);
+        
+        
+        const rocketPlusInfo = await getRocketInfo(id);
+        await plusInfoRocket(rocketPlusInfo);
+        //console.log(rocketPlusInfo);
+        
+        const rocketCountry = await getRocketInfoCountry(id);
+        await plusInfoRocket2C (rocketCountry)
+        //console.log(rocketCountry)
+        
+        const rocketImg = await getRocketInfoimages(id);
+        await plusInfoRocket3I (rocketImg)
+        //console.log(rocketImg);
+        
+        const rocketCircle1 = await getRocketInfocircle1(id);
+        await plusInfoRocketcircle1 (rocketCircle1)
+        //console.log(rocketCircle1);
+        
+        const rocketCircle3 = await getRocketInfocircle3(id); /*----*/
+        await plusInfoRocketcircle3 (rocketCircle3)
+        //console.log(rocketCircle3);
+        
+        const rocketDown1 = await getRocketInfoDownIzq(id);
+        await plusInfoRocketInfodown1 (rocketDown1)
+        //console.log(rocketDown1);
+        
+        const rocketDown2 = await getRocketInfoDownDer(id);
+        await plusInfoRocketInfodown2 (rocketDown2)
+        //console.log(rocketDown2);
+        
+        const rocketLines = await getRocketInfoLines(id);
+        await plusInfoRocketLines (rocketLines)
+        //console.log(rocketLines);
+        
+    }
         //pagination capsulas
 
 export const paginationCapsules = async () => {
@@ -87,3 +126,10 @@ export const paginationCapsules = async () => {
     
         await InfoCapsules(capsuleInfo);
     }; 
+
+
+
+
+
+
+
