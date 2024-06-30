@@ -1,8 +1,8 @@
 
 import { getAllRocketsId, getOneNameRock, getRocketInfo, getRocketInfoCountry, getRocketInfoimages, getRocketInfocircle1, getRocketInfoDownIzq, getRocketInfoDownDer,getRocketInfocircle3, getRocketInfoLines } from "../module/rockets.js"
 import { nameRocket, plusInfoRocket, plusInfoRocket2C, plusInfoRocket3I, plusInfoRocketcircle1, plusInfoRocketcircle3, plusInfoRocketInfodown1, plusInfoRocketInfodown2, plusInfoRocketLines } from "./plantiRocket.js";
-import {getCapsulasAllId, getInfoCapsules } from "../module/capsulas.js"; 
-import {InfoCapsules} from "./plantiCapsulas.js"
+import {getCapsulasAllId, getInfoCapsules, getSerialCapsules } from "../module/capsulas.js"; 
+import {InfoCapsules,  plusInfoCapsules } from "./plantiCapsulas.js"
 
 
 export const pageRockets = async () => {
@@ -125,7 +125,12 @@ export const paginationCapsules = async () => {
         const capsuleInfo = await getInfoCapsules(id);
     
         await InfoCapsules(capsuleInfo);
+
+
+        const  serial = await getSerialCapsules(id);
+        await plusInfoCapsules (serial)
     }; 
+
 
 
 
