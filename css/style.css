@@ -858,8 +858,12 @@ h3{
 
 .information__item {
     /* background: violet; */
+    flex-direction: column;
     overflow-y: auto;
     height: 75vh;
+    width: 250px;
+    display: flex;
+    
 }
 #pagination{
     gap:20px; 

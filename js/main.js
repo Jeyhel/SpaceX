@@ -3,18 +3,27 @@
 
 
 
-import { pageRocket, pageCapsulas, pageCrew } from "./components/pagination.js";
+import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads } from "./components/pagination.js";
 import { clearInformation } from "./components/inner.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     const rocketElement = document.querySelector("#rocket");
-    const capsulesElement = document.querySelector("#capsules");
-    const crewElement = document.querySelector("#crew");
-  
-
     rocketElement.addEventListener("click", handleRocketClick);
+
+    const capsulesElement = document.querySelector("#capsules");
     capsulesElement.addEventListener("click", handleCapsulesClick);
+
+    const crewElement = document.querySelector("#crew");
     crewElement.addEventListener("click", handleCrewClick);
+
+    const launchesElement = document.querySelector("#launches");
+   launchesElement.addEventListener("click", handleLaunchesClick);
+
+   const coresElement = document.querySelector("#cores");
+   coresElement.addEventListener("click", handleCoresClick);
+
+   const landpadsElement = document.querySelector("#landpads");
+   landpadsElement.addEventListener("click", handleLandpadsClick);
 
     await handleRocketClick();
 });
@@ -33,6 +42,21 @@ const handleCrewClick = async () => {
     clearInformation();
     await pageCrew();
 }
+const handleLaunchesClick = async () => {
+    clearInformation();
+    await pageLaunches();
+}
+const handleCoresClick = async () => {
+    clearInformation();
+    await pageCores();
+}
+const handleLandpadsClick = async () => {
+    clearInformation();
+    await pageLandpads();
+}
+
+
+
 
 //LAMA TODA LA DATA
 // let header__title = document.querySelector("header__title")

@@ -7,6 +7,15 @@ import {InfoCapsulas } from "./plantiCapsulas.js"
 import {getInfoCrew, getCrewAllId} from "../module/crew.js"
 import {InfoCrew} from "./plantiCrew.js"
 
+import {getInfoLaunches, getLaunchesAllId} from "../module/launches.js"
+import {InfoLaunches} from "./plantiLaunches.js"
+
+import {getInfoCores, getCoresAllId} from "../module/cores.js"
+import {InfoCores} from "./plantiCores.js"
+
+import {getInfoLandpads, getLandpadsAllId} from "../module/landpads.js"
+import {InfoLandpads} from "./plantiLandpads.js"
+
 
 let currentPage = 0;
 const itemsPerPage = 5;
@@ -38,11 +47,21 @@ const renderPagination = (totalItems, type) => {
             currentPage--;
             if (type === 'rockets') {
                 pageRocket();
+
             } else if (type === 'capsules') {
                 pageCapsulas();
             }
             else if ( type === 'crew') {
-                paginationCrew();
+                pageCrew();
+            }
+            else if ( type === 'launches') {
+                pageLaunches();
+            }
+            else if ( type === 'cores') {
+                pageCores();
+            }
+            else if ( type === 'landpads') {
+                pageLandpads();
             }
         }
     };
@@ -62,8 +81,18 @@ const renderPagination = (totalItems, type) => {
                 pageCapsulas();
             }
             else if ( type === 'crew') {
-                paginationCrew();
+                pageCrew();
             }
+            else if ( type === 'launches') {
+                pageLaunches();
+            }
+            else if ( type === 'cores') {
+                pageCores();
+            }
+            else if ( type === 'landpads') {
+                pageLandpads();
+            }
+            
         }
     };
 
@@ -257,6 +286,118 @@ const loadCrew = async (id) => {
 
     await InfoCrew(crewInfo);
 }
+
+
+
+//pagination launches
+export const pageLaunches = async () => {
+    const launches = await getLaunchesAllId();
+    renderPagination(launches.length, 'launches');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'launches') {
+                await loadLaunches(launches[id].id);
+            }
+        }
+    });
+
+    if (launches.length > 0) {
+        await loadLaunches(launches[0].id); 
+    }
+}
+
+const loadLaunches = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let launchesInfo = await getInfoLaunches(id);
+
+    await InfoLaunches (launchesInfo);
+}
+
+
+//pagination cores
+
+export const pageCores = async () => {
+    const cores = await getCoresAllId();
+    renderPagination(cores.length, 'cores');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'cores') {
+                await loadCores(cores[id].id);
+            }
+        }
+    });
+
+    if (cores.length > 0) {
+        await loadCores(cores[0].id); 
+    }
+}
+
+const loadCores = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let coresInfo = await getInfoCores(id);
+
+    await InfoCores (coresInfo);
+}
+
+
+//pagination landpads 
+export const pageLandpads = async () => {
+    const landpads = await getLandpadsAllId();
+    renderPagination(landpads.length, 'landpads');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'landpads') {
+                await loadLandpads(landpads[id].id);
+            }
+        }
+    });
+
+    if (landpads.length > 0) {
+        await loadLandpads(landpads[0].id); 
+    }
+}
+
+const loadLandpads = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let landpadsInfo = await getInfoLandpads(id);
+
+    await InfoLandpads (landpadsInfo);
+}
+
+
 
 
 
