@@ -1,6 +1,6 @@
 
 
-export const getCapsulasAllId = async () => {
+export const getCrewAllId = async () => {
     const config = {
         method: 'POST',
         headers: {
@@ -14,13 +14,13 @@ export const getCapsulasAllId = async () => {
         })
     };
 
-    let res = await fetch("https://api.spacexdata.com/v4/capsules/query", config);
+    let res = await fetch("https://api.spacexdata.com/v4/crew/query", config);
     const { docs } = await res.json();
     console.log(docs);
     return docs;
 }
 
-export const getInfoCapsulas = async (id) => {
+export const getInfoCrew = async (id) => {
     const config = {
         method: 'POST',
         headers: {
@@ -35,7 +35,7 @@ export const getInfoCapsulas = async (id) => {
         })
     };
 
-    let res = await fetch ("https://api.spacexdata.com/v4/capsules/query", config);
+    let res = await fetch ("https://api.spacexdata.com/v4/crew/query", config);
     const { docs } = await res.json();
     console.log(docs[0]);
     return docs[0];
