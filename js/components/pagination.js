@@ -31,6 +31,10 @@ import {InfoHistory} from "./plantiHistory.js"
 import {getInfoLaunchpads, getLaunchpadsAllId } from "../module/launchpads.js"
 import {InfoLaunchpads} from "./plantiLaunchpads.js"
 
+import {getInfoPayloads, getPayloadsAllId } from "../module/payloads.js"
+import {InfoPayloads} from "./plantiPayloads.js"
+
+
 let currentPage = 0;
 const itemsPerPage = 5;
 
@@ -87,7 +91,10 @@ const renderPagination = (totalItems, type) => {
                 pageHistory();
             }
             else if ( type === 'launchpads') {
-                pageHistory();
+                pageLaunchpads();
+            }
+            else if ( type === 'payloads') {
+                pagePayloads();
             }
         }
     };
@@ -128,7 +135,10 @@ const renderPagination = (totalItems, type) => {
                 pageHistory();
             }
             else if ( type === 'launchpads') {
-                pageHistory();
+                pageLaunchpads();
+            }
+            else if ( type === 'payloads') {
+                pagePayloads();
             }
         }
     };
@@ -597,4 +607,41 @@ const loadLaunchpads = async (id) => {
     let launchpadsInfo = await getInfoLaunchpads(id);
 
     await InfoLaunchpads (launchpadsInfo);
+}
+
+
+//pagination payloads
+
+export const pagePayloads = async () => {
+    const payloads = await getPayloadsAllId();
+    renderPagination(payloads.length, 'payloads');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'payloads') {
+                await loadPayloads(payloads[id].id);
+            }
+        }
+    });
+
+    if (payloads.length > 0) {
+        await loadPayloads(payloads[0].id); 
+    }
+}
+
+const loadPayloads = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let payloadsInfo = await getInfoPayloads(id);
+
+    await InfoPayloads (payloadsInfo);
 }

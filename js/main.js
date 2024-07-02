@@ -3,7 +3,7 @@
 
 
 
-import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips, pageCompany, pageDragons, pageHistory, pageLaunchpads} from "./components/pagination.js";
+import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips, pageCompany, pageDragons, pageHistory, pageLaunchpads, pagePayloads} from "./components/pagination.js";
 import { clearInformation } from "./components/inner.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -37,8 +37,12 @@ document.addEventListener("DOMContentLoaded", async () => {
    const historyElement = document.querySelector("#history");
    historyElement.addEventListener("click", handleHistoryClick);
 
-   const LaunchpadsElement = document.querySelector("#launchpads");
-   LaunchpadsElement.addEventListener("click", handleLaunchpadsClick);
+   const launchpadsElement = document.querySelector("#launchpads");
+   launchpadsElement.addEventListener("click", handleLaunchpadsClick);
+
+
+   const payloadsElement = document.querySelector("#payloads");
+   payloadsElement.addEventListener("click", handlePayloadsClick);
 
    
 
@@ -94,6 +98,12 @@ const handleLaunchpadsClick = async () => {
     clearInformation();
     await pageLaunchpads();
 }
+
+const handlePayloadsClick = async () => {
+    clearInformation();
+    await pagePayloads();
+}
+
 
 
 
