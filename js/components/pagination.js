@@ -19,6 +19,9 @@ import {InfoLandpads} from "./plantiLandpads.js"
 import {getInfoShips, getShipsAllId} from "../module/ships.js"
 import {InfoShips} from "./plantiShips.js"
 
+import {getInfoCompany} from "../module/company.js"
+import {InfoCompany} from "./plantiCompany.js"
+
 let currentPage = 0;
 const itemsPerPage = 5;
 
@@ -65,6 +68,9 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'landpads') {
                 pageLandpads();
             }
+            else if ( type === 'ships') {
+                pageShips();
+            }
         }
     };
 
@@ -94,7 +100,9 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'landpads') {
                 pageLandpads();
             }
-            
+            else if ( type === 'ships') {
+                pageShips();
+            }
         }
     };
 
@@ -435,6 +443,23 @@ const loadShips = async (id) => {
     await InfoShips (shipsInfo);
 }
 
+//pagination company
+
+export const pageCompany = async () => {
+
+    const company = await getInfoCompany();
+    await loadCompany(company); 
+}
+
+const loadCompany = async (company) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".section__information__3");
+    document.querySelector(".section__image");
+
+    await InfoCompany(company);
+}
 
 
 

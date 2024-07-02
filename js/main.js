@@ -3,7 +3,7 @@
 
 
 
-import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips } from "./components/pagination.js";
+import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips, pageCompany} from "./components/pagination.js";
 import { clearInformation } from "./components/inner.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
    const shipsElement = document.querySelector("#ships");
    shipsElement.addEventListener("click", handleShipsClick);
+
+   const companyElement = document.querySelector("#company");
+   companyElement.addEventListener("click", handleCompanyClick);
+
+   
 
     await handleRocketClick();
 });
@@ -62,7 +67,10 @@ const handleShipsClick = async () => {
     clearInformation();
     await pageShips();
 }
-
+const handleCompanyClick = async () => {
+    clearInformation();
+    await pageCompany();
+}
 
 //LAMA TODA LA DATA
 // let header__title = document.querySelector("header__title")
