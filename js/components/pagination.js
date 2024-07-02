@@ -34,6 +34,9 @@ import {InfoLaunchpads} from "./plantiLaunchpads.js"
 import {getInfoPayloads, getPayloadsAllId } from "../module/payloads.js"
 import {InfoPayloads} from "./plantiPayloads.js"
 
+import {getInfoRoadster} from "../module/roadster.js"
+import {InfoRoadster} from "./plantiRoadster.js"
+
 
 let currentPage = 0;
 const itemsPerPage = 5;
@@ -96,6 +99,9 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'payloads') {
                 pagePayloads();
             }
+            else if ( type === 'roadster') {
+                pageRoadster();
+            }
         }
     };
 
@@ -139,6 +145,9 @@ const renderPagination = (totalItems, type) => {
             }
             else if ( type === 'payloads') {
                 pagePayloads();
+            }
+            else if ( type === 'roadster') {
+                pageRoadster();
             }
         }
     };
@@ -644,4 +653,23 @@ const loadPayloads = async (id) => {
     let payloadsInfo = await getInfoPayloads(id);
 
     await InfoPayloads (payloadsInfo);
+}
+
+
+//pagination roadster
+
+export const pageRoadster = async () => {
+
+    const roadster = await getInfoRoadster();
+    await loadRoadster(roadster); 
+}
+
+const loadRoadster = async (roadster) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".section__information__3");
+    document.querySelector(".section__image");
+
+    await InfoRoadster(roadster);
 }
