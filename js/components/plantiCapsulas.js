@@ -60,10 +60,19 @@ document.querySelector(".section__information__2").innerHTML = /*html*/`
 
 
     document.querySelector(".section__image").innerHTML = /*html*/`
+
+
     <div class="capsula3">
-    <h3>Launches</h3>
-    <p> ${plusInfo.launches} </p>
-    <h3>Last_update</h3>
-    <p> ${plusInfo.last_update} </p>
+        <div class="capsula31">    
+            <h3>Launches</h3>
+            <hr>
+            <p> ${plusInfo.launches} </p>
+        </div><br>
+        <div class="capsula32">
+        
+            <h3>Last_update</h3>
+            <hr>
+            <p> ${plusInfo.last_update} </p>
+        </div>
     </div>`;
 };

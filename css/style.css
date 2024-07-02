@@ -633,8 +633,7 @@ h3{
     grid-area: carusel__colum__1;
     display: flex;
     gap: 10px;
-    width: 320px;
-    height: 200px;
+   
 }
 
 .section__information__2 div:first-child>.carousel__item {
@@ -1209,6 +1208,7 @@ progress[value]::-moz-progress-bar {
     grid-template-areas:
         "carusel__colum__1"
         "table__colum__1";
+ 
 
 
         
@@ -1232,7 +1232,9 @@ progress[value]::-moz-progress-bar {
 }
 
 .capsula1{
-
+    margin-top: 70px;
+    width: 320px;
+    height: 90px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1241,8 +1243,8 @@ progress[value]::-moz-progress-bar {
 
 }
 .capsula01{
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 90px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1252,7 +1254,7 @@ progress[value]::-moz-progress-bar {
 }
 .capsula02{
     width: 320px;
-    height: 100px;
+    height: 90px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1262,7 +1264,7 @@ progress[value]::-moz-progress-bar {
 }
 .capsula03{
     width: 320px;
-    height: 500px;
+    height: 80px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1298,7 +1300,8 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     border-radius: 60px;
-    text-align: center;
+    text-align: center; 
+
 
 }
 .capsula23{
@@ -1313,20 +1316,171 @@ progress[value]::-moz-progress-bar {
 }
 
 
-.section__information__2 p {
-    color: var(--color-two);
-}
 .capsula3{ 
-    background-color: #0056b3;
+
+    margin-top: 30px;
+    width: 350px;
+    height: 100px;
+    color: var(--color-two);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+    margin-left: 70px;
+  
+}
+
+.capsula31{
+    width: 327px;
+    height: 100px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    text-align: center;
+
+}
+.capsula32{
+    width: 327px;
+    height: 100px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    text-align: center;
+
+}
+
+.crew1{ 
+  
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    color: var(--color-two);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-left: 70px;
+  
+}
+.crew1 h3{
+    color: var(--color--five);
+
+}
+.crew01{
+    width: 320px;
+    height: 100px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    text-align: center;
+
+}
+.crew02{
+    width: 320px;
+    height: 20  0px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    text-align: center;
+
+}
+.crew02 h3{
+    color: var(--color--five);
+
+}
+.section__information__2 p {
     color: var(--color-two);
 }
 
 
 .roadster1{
-    background-color: #0056b3;
+    background-color: var(--color-1);
     width: 300px;
 }
 
+.crew2{
+
+    background-color: var(--color-1);
+    border-radius: 40px;
+    width: 300px;
+    height: 250px;
+    padding-top: 10px;
+    text-align: center;
+ 
+}
+.crew22 p{
+
+    font-size: 20px;
+
+}
+
+.launches1{
+    height: 220px;
+    margin-top: -50px;
+    background-color: var(--color-1);
+    border-radius: 40px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  
+    
+}
+.launches2{
+    margin-top: -30px;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+.launches3{
+    margin-left: 70px;
+    width: 400px;
+    height: 270px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+.cores1{
+
+    width: 400px;
+    height: 150px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+}
+.cores2{
+
+    width: 400px;
+    height: 300px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+}
+
+.cores3{
+
+    width: 400px;
+    height: 70px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+}
