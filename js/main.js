@@ -3,7 +3,7 @@
 
 
 
-import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads } from "./components/pagination.js";
+import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips } from "./components/pagination.js";
 import { clearInformation } from "./components/inner.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
    const landpadsElement = document.querySelector("#landpads");
    landpadsElement.addEventListener("click", handleLandpadsClick);
+
+   const shipsElement = document.querySelector("#ships");
+   shipsElement.addEventListener("click", handleShipsClick);
 
     await handleRocketClick();
 });
@@ -55,7 +58,10 @@ const handleLandpadsClick = async () => {
     await pageLandpads();
 }
 
-
+const handleShipsClick = async () => {
+    clearInformation();
+    await pageShips();
+}
 
 
 //LAMA TODA LA DATA

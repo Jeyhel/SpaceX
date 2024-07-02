@@ -16,6 +16,8 @@ import {InfoCores} from "./plantiCores.js"
 import {getInfoLandpads, getLandpadsAllId} from "../module/landpads.js"
 import {InfoLandpads} from "./plantiLandpads.js"
 
+import {getInfoShips, getShipsAllId} from "../module/ships.js"
+import {InfoShips} from "./plantiShips.js"
 
 let currentPage = 0;
 const itemsPerPage = 5;
@@ -397,6 +399,41 @@ const loadLandpads = async (id) => {
     await InfoLandpads (landpadsInfo);
 }
 
+//pagination ships 
+
+export const pageShips = async () => {
+    const ships = await getShipsAllId();
+    renderPagination(ships.length, 'ships');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'ships') {
+                await loadShips(ships[id].id);
+            }
+        }
+    });
+
+    if (ships.length > 0) {
+        await loadShips(ships[0].id); 
+    }
+}
+
+const loadShips = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let shipsInfo = await getInfoShips(id);
+
+    await InfoShips (shipsInfo);
+}
 
 
 
