@@ -1214,3 +1214,13 @@ progress[value]::-moz-progress-bar {
     /* justify-content: space-evenly; */
 }
 
+
+
+#description__item{
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 150px;
+    height: 150px;
+
+}
+/*  

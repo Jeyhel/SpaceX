@@ -28,6 +28,9 @@ import {InfoDragons} from "./plantiDragons.js"
 import {getInfoHistory, getHistoryAllId } from "../module/history.js"
 import {InfoHistory} from "./plantiHistory.js"
 
+import {getInfoLaunchpads, getLaunchpadsAllId } from "../module/launchpads.js"
+import {InfoLaunchpads} from "./plantiLaunchpads.js"
+
 let currentPage = 0;
 const itemsPerPage = 5;
 
@@ -83,6 +86,9 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'history') {
                 pageHistory();
             }
+            else if ( type === 'launchpads') {
+                pageHistory();
+            }
         }
     };
 
@@ -119,6 +125,9 @@ const renderPagination = (totalItems, type) => {
                 pageDragons();
             }
             else if ( type === 'history') {
+                pageHistory();
+            }
+            else if ( type === 'launchpads') {
                 pageHistory();
             }
         }
@@ -551,4 +560,41 @@ const loadHistory = async (id) => {
     let historyInfo = await getInfoHistory(id);
 
     await InfoHistory (historyInfo);
+}
+
+
+//pagination launchpads
+
+export const pageLaunchpads = async () => {
+    const launchpads = await getLaunchpadsAllId();
+    renderPagination(launchpads.length, 'launchpads');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'launchpads') {
+                await loadLaunchpads(launchpads[id].id);
+            }
+        }
+    });
+
+    if (launchpads.length > 0) {
+        await loadLaunchpads(launchpads[0].id); 
+    }
+}
+
+const loadLaunchpads = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let launchpadsInfo = await getInfoLaunchpads(id);
+
+    await InfoLaunchpads (launchpadsInfo);
 }
