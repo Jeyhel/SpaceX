@@ -3,7 +3,7 @@ export const InfoDragons = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.name;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
+    document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="dragons1">
     <h3>Description</h3>
     <p> ${plusInfo.description} </p>

@@ -3,7 +3,7 @@
 
 export const clearInformation = () => {
     document.querySelector("#header__title").innerHTML = "";
-    document.querySelector(".description__item").innerHTML = "";
+    document.querySelector(".nav__description").innerHTML = "";
     document.querySelector(".section__information__1").innerHTML = "";
     //document.querySelector(".information__table__1").innerHTML = "";
     document.querySelector(".section__information__2")

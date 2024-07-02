@@ -15,33 +15,52 @@ export const InfoCapsulas = async (plusInfo) => {
     
         
 document.querySelector(".section__information__2").innerHTML = /*html*/`
-<div class="data">
 
-<h4>Id of the Capsule </h4>
+<div class="capsula1">
 
-    <p> ${plusInfo.id} </p>
-    <h3>Status</h3>
-    <p> ${plusInfo.status} </p>
-    <h3>Type</h3>
-    <p> ${plusInfo.type} </p>
-    </div>`;
+        <div class="capsula01"> 
+        <h3>Id of the Capsule</h3>
+        <hr>
+        <p> ${plusInfo.id} </p>
+    </div>
+        <div class="capsula02">
+        <h3>Status</h3>
+        <hr>
+        <p> ${plusInfo.status} </p>
+    </div>
+    <div class="capsula03">
+        <h3>Type</h3>
+        <hr>
+        <p> ${plusInfo.type} </p>
+    </div>
+ </div>`;
 
 
     document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`
-    <div class="numer2">
-    <h3>Water_landings</h3>
-    <p> ${plusInfo.water_landings} </p>
-    <h3>Land_landings</h3>
-    <p> ${plusInfo.land_landings} </p>
-    <h3>Serial</h3>
-    <p> ${plusInfo.serial} </p>
-    </div>`;
+<div class="capsula2">
+
+    <div class="capsula21">
+        <h3>Water_landings</h3>
+        <hr>
+        <p> ${plusInfo.water_landings} </p>
+    </div>
+    <div class="capsula22">
+        <h3>Land_landings</h3>
+        <hr>
+        <p> ${plusInfo.land_landings} </p>
+    </div>
+    <div class="capsula23">
+        <h3>Serial</h3>
+        <hr>
+        <p> ${plusInfo.serial} </p>
+    </div>
+ </div>`;
 
 
 
 
     document.querySelector(".section__image").innerHTML = /*html*/`
-    <div class="numer3">
+    <div class="capsula3">
     <h3>Launches</h3>
     <p> ${plusInfo.launches} </p>
     <h3>Last_update</h3>

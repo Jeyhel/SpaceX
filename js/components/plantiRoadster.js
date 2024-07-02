@@ -5,7 +5,7 @@ export const InfoRoadster = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.name;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
+    document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="roadster1">
 
         <h3> launch date utc</h3> 
@@ -42,7 +42,7 @@ export const InfoRoadster = async (plusInfo) => {
     </div>
     `;
 
-    document.querySelector(".section__information__2").innerHTML = /*html*/`
+    document.querySelector(".country_rocket").innerHTML = /*html*/`
     <div class="roadster2">
     
         <a href = "${plusInfo.wikipedia}">

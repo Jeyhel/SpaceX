@@ -5,7 +5,7 @@ export const InfoLandpads = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.full_name;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
+    document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="landpads1">
     
     <h3>Details</h3>

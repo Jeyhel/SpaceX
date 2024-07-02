@@ -5,7 +5,7 @@ export const InfoShips = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.name;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
+    document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="ships1">
 
     <a href ="${plusInfo.link}">
