@@ -22,6 +22,12 @@ import {InfoShips} from "./plantiShips.js"
 import {getInfoCompany} from "../module/company.js"
 import {InfoCompany} from "./plantiCompany.js"
 
+import {getInfoDragons, getDragonsAllId} from "../module/dragons.js"
+import {InfoDragons} from "./plantiDragons.js"
+
+import {getInfoHistory, getHistoryAllId } from "../module/history.js"
+import {InfoHistory} from "./plantiHistory.js"
+
 let currentPage = 0;
 const itemsPerPage = 5;
 
@@ -71,6 +77,12 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'ships') {
                 pageShips();
             }
+            else if ( type === 'dragons') {
+                pageDragons();
+            }
+            else if ( type === 'history') {
+                pageHistory();
+            }
         }
     };
 
@@ -102,6 +114,12 @@ const renderPagination = (totalItems, type) => {
             }
             else if ( type === 'ships') {
                 pageShips();
+            }
+            else if ( type === 'dragons') {
+                pageDragons();
+            }
+            else if ( type === 'history') {
+                pageHistory();
             }
         }
     };
@@ -461,7 +479,76 @@ const loadCompany = async (company) => {
     await InfoCompany(company);
 }
 
+//pagination dragons 
 
 
+export const pageDragons = async () => {
+    const dragons = await getDragonsAllId();
+    renderPagination(dragons.length, 'dragons');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'dragons') {
+                await loadDragons(dragons[id].id);
+            }
+        }
+    });
+
+    if (dragons.length > 0) {
+        await loadDragons(dragons[0].id); 
+    }
+}
+
+const loadDragons = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let dragonsInfo = await getInfoDragons(id);
+
+    await InfoDragons (dragonsInfo);
+}
 
 
+//pagination history
+
+export const pageHistory = async () => {
+    const history = await getHistoryAllId();
+    renderPagination(history.length, 'history');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'history') {
+                await loadHistory(history[id].id);
+            }
+        }
+    });
+
+    if (history.length > 0) {
+        await loadHistory(history[0].id); 
+    }
+}
+
+const loadHistory = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let historyInfo = await getInfoHistory(id);
+
+    await InfoHistory (historyInfo);
+}
