@@ -37,6 +37,10 @@ import {InfoPayloads} from "./plantiPayloads.js"
 import {getInfoRoadster} from "../module/roadster.js"
 import {InfoRoadster} from "./plantiRoadster.js"
 
+import {getInfoStarlink, getStarlinkAllId} from "../module/starlink.js"
+import {InfoStarlink} from "./plantiStarlink.js"
+
+
 
 let currentPage = 0;
 const itemsPerPage = 5;
@@ -102,6 +106,9 @@ const renderPagination = (totalItems, type) => {
             else if ( type === 'roadster') {
                 pageRoadster();
             }
+            else if ( type === 'starlink') {
+                pageRoadster();
+            }
         }
     };
 
@@ -147,6 +154,9 @@ const renderPagination = (totalItems, type) => {
                 pagePayloads();
             }
             else if ( type === 'roadster') {
+                pageRoadster();
+            }
+            else if ( type === 'starlink') {
                 pageRoadster();
             }
         }
@@ -672,4 +682,41 @@ const loadRoadster = async (roadster) => {
     document.querySelector(".section__image");
 
     await InfoRoadster(roadster);
+}
+
+
+//pagination starlink
+
+export const pageStarlink= async () => {
+    const starlink = await getStarlinkAllId();
+    renderPagination(starlink.length, 'starlink');
+
+    const paginationElement = document.querySelector("#pagination");
+
+    paginationElement.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (e.target.tagName === 'A') {
+            const id = e.target.dataset.id;
+            const type = e.target.dataset.type; 
+            if (id && type === 'starlink') {
+                await loadStarlink(starlink[id].id);
+            }
+        }
+    });
+
+    if (starlink.length > 0) {
+        await loadStarlink(starlink[0].id); 
+    }
+}
+
+const loadStarlink = async (id) => {
+    document.querySelector("#header__title");
+    document.querySelector(".section__information__1");
+    document.querySelector(".section__information__2");
+    document.querySelector(".country_rocket");
+    document.querySelector(".section__image");
+
+    let starlinkInfo = await getInfoStarlink(id);
+
+    await InfoStarlink (starlinkInfo);
 }

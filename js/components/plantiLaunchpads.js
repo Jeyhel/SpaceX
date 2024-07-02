@@ -3,15 +3,6 @@ export const InfoLaunchpads = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.name;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
-    <div class="launchpads1">
-
-    <div class="launchpads01">
-
-        <h3>launches</h3>
-        <p> ${plusInfo.launches} </p>
-    </div>
-    </div>`;
 
     document.querySelector(".section__information__2").innerHTML = /*html*/`
     <div class="launchpads2">

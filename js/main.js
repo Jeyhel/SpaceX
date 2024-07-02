@@ -3,7 +3,7 @@
 
 
 
-import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips, pageCompany, pageDragons, pageHistory, pageLaunchpads, pagePayloads, pageRoadster} from "./components/pagination.js";
+import { pageRocket, pageCapsulas, pageCrew, pageLaunches, pageCores, pageLandpads, pageShips, pageCompany, pageDragons, pageHistory, pageLaunchpads, pagePayloads, pageRoadster, pageStarlink} from "./components/pagination.js";
 import { clearInformation } from "./components/inner.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
    const roadsterElement = document.querySelector("#roadster");
    roadsterElement.addEventListener("click", handleRoadsterClick);
+
+   const StarlinkElement = document.querySelector("#starlink");
+   StarlinkElement.addEventListener("click", handleStarlinkClick);
+
 
    
 
@@ -109,6 +113,11 @@ const handlePayloadsClick = async () => {
 const handleRoadsterClick = async () => {
     clearInformation();
     await pageRoadster();
+}
+
+const handleStarlinkClick = async () => {
+    clearInformation();
+    await pageStarlink();
 }
 
 
