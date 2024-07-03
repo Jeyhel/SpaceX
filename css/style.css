@@ -1655,3 +1655,75 @@ progress[value]::-moz-progress-bar {
     color: var(--color-1--rgba);
 
 }
+.dragons1{
+    width: 400px;
+    height: 250px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
+
+}
+.dragons2{
+    margin-top: -150px;
+    width: 200px;
+    height: 400px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: 100px
+}
+.dragons2 p {
+    color: var(--color--two);
+
+}
+.dragons3{
+    margin-top: -130px;   
+    width: 230px;
+    height: 620px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: -150px
+}
+.dragons3 h4, p {
+    color: var(--color--two);
+
+}
+.dragons4{
+    width: 290px;
+    height: 480px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
+
+}
+.dragons4 p{
+    color: var(--color--two);
+}
+.dragons5{
+     
+    width: 400px;
+    height: 140px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+.dragons5 h4, p {
+    color: var(--color--two);
+
+}

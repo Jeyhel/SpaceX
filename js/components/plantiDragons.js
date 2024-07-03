@@ -5,8 +5,11 @@ export const InfoDragons = async (plusInfo) => {
     
     document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="dragons1">
+    <br>
     <h3>Description</h3>
+    <hr>
     <p> ${plusInfo.description} </p>
+    <br>
 
 
     `;
@@ -73,22 +76,22 @@ export const InfoDragons = async (plusInfo) => {
     
         <h3>Type</h3>
         <p> ${plusInfo.type} </p>
-
+        <hr>
         <h3>Active</h3>
         <p> ${plusInfo.active} </p>
-
+        <hr>
         <h3>Crew capacity</h3>
         <p> ${plusInfo.crew_capacity} </p>
-
+        <hr>
         <h3>Sidewall angle deg</h3>
         <p> ${plusInfo.sidewall_angle_deg} </p>
-
+        <hr>
         <h3>Orbit duration yr</h3>
         <p> ${plusInfo.orbit_duration_yr} </p>
-
+        <hr>
         <h3>Dry mass kg</h3>
         <p> ${plusInfo.dry_mass_kg} </p>
-
+        <hr>
         <h3>Dry mass lb</h3>
         <p> ${plusInfo.dry_mass_lb} </p>
         
@@ -102,10 +105,11 @@ export const InfoDragons = async (plusInfo) => {
     <div class="dragons5">
 
     <h3>More Information... </h3>
+  
     <a href ="${plusInfo.wikipedia}">
-    <p> Clik here...</p>
+    <p> Clik here</p>
     </a>
-
+    <hr>
     <h3>ID</h3>
     <p> ${plusInfo.id} </p>
     
