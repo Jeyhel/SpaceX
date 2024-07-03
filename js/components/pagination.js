@@ -679,7 +679,7 @@ const loadRoadster = async (roadster) => {
     document.querySelector("#header__title");
     document.querySelector(".section__information__1");
     document.querySelector(".section__information__2");
-    document.querySelector(".section__information__3");
+    document.querySelector(".country_rocket");
     document.querySelector(".section__image");
 
     await InfoRoadster(roadster);

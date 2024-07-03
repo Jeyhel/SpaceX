@@ -1395,9 +1395,16 @@ progress[value]::-moz-progress-bar {
 
 
 
-.roadster1{
+.roadster1{ 
+    width: 290px;
+    height: 400px;
     background-color: var(--color-1);
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
 }
 
 .crew2{
@@ -1841,6 +1848,41 @@ progress[value]::-moz-progress-bar {
     border-radius: 40px; 
     text-align: center;
     margin-left: 100px;
-  
+
+}
+.roadster2{
+    margin-top: -130px;  
+    width: 200px;
+    height: 280px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: 200px
+}
+
+.roadster3{
+    margin-top: -130px;  
+    width: 200px;
+    height: 480px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: -100px
+}
+.roadster4{
+ 
+    width: 290px;
+    height: 500px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
 
 }
