@@ -3,34 +3,31 @@ export const InfoStarlink = async (plusInfo) => {
         
     document.querySelector("#header__title").innerHTML = plusInfo.spaceTrack.OBJECT_NAME;
     
-    document.querySelector(".description__item").innerHTML = /*html*/`
+    document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="starlink1">
 
-    <h3>COMMENT</h3>
-    <p> ${plusInfo.spaceTrack.COMMENT} </p>
-
-    <h3>CREATION DATE</h3>
-    <p> ${plusInfo.spaceTrack.CREATION_DATE} </p>
-
-    <h3>ORIGINATOR</h3>
-    <p> ${plusInfo.spaceTrack.ORIGINATOR} </p>
-
-    <h3>OBJECT ID</h3>
-    <p> ${plusInfo.spaceTrack.OBJECT_ID} </p>
-
-    
+        <h3>COMMENT</h3>
+        <p> ${plusInfo.spaceTrack.COMMENT} </p>
+        <hr>  <br>
+        <h3>CREATION DATE</h3>
+        <p> ${plusInfo.spaceTrack.CREATION_DATE} </p>
+        <hr> <br>
+        <h3>ORIGINATOR</h3>
+        <p> ${plusInfo.spaceTrack.ORIGINATOR} </p>
+        <hr> <br>
+        <h3>OBJECT ID</h3>
+        <p> ${plusInfo.spaceTrack.OBJECT_ID} </p>
+        <br>
     </div>
     `;
 
     document.querySelector(".section__information__2").innerHTML = /*html*/`
     <div class="starlink2">
     
-    
-
+    <br>
         <h3>REF_FRAME</h3>
         <p> ${plusInfo.spaceTrack.REF_FRAME} </p>
         <br>
-    
         <h3>TIME_SYSTEM</h3>
         <p> ${plusInfo.spaceTrack.TIME_SYSTEM} </p>
         <br>
@@ -77,25 +74,25 @@ export const InfoStarlink = async (plusInfo) => {
     
         <h3>OBJECT TYPE</h3>
         <p> ${plusInfo.spaceTrack.OBJECT_TYPE} </p>
-
+        <hr>   <br>      
         <h3>RCS SIZE</h3>
         <p> ${plusInfo.spaceTrack.RCS_SIZE} </p>
-
+        <hr>   <br>
         <h3>OUNTRY CODE</h3>
         <p> ${plusInfo.spaceTrack.COUNTRY_CODE} </p>
-
+        <hr>   <br>
         <h3>SITE</h3>
         <p> ${plusInfo.spaceTrack.SITE} </p>
-
+        <hr>   <br>
         <h3>DECAY DATE</h3>
         <p> ${plusInfo.spaceTrack.DECAY_DATE} </p>
-
+        <hr>   <br>
         <h3>LAUNCH DATE</h3>
         <p> ${plusInfo.spaceTrack.LAUNCH_DATE} </p>
-
+        <hr>   <br>
         <h3>FILE</h3>
         <p> ${plusInfo.spaceTrack.FILE} </p>
-        
+        <br>
     
     </div>
     `;
