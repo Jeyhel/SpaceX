@@ -26,7 +26,7 @@ export const clearInformation = () => {
         "#country_rocket",
         "#sucess_rate_rocket",
         ".information__item",
-        // ".information__table__2",
+        //".information__table__2",
         ".section__image",
         "#pagination",
         ".pagination"

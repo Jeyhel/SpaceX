@@ -863,7 +863,6 @@ h3{
 .information__item {
     /* background: violet; */
     flex-direction: column;
-    overflow-y: auto;
     height: 75vh;
     width: 250px;
     display: flex;
@@ -1484,3 +1483,57 @@ progress[value]::-moz-progress-bar {
     border-radius: 40px; 
     text-align: center;
 }
+.landpads1{
+
+    width: 400px;
+    height: 250px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+}
+.landpads2{
+    margin-top: -150px;  
+    width: 200px;
+    height: 340px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: 100px;
+}
+.landpads3{
+    margin-top: -130px;  
+    width: 200px;
+    height: 340px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: -300px;
+}
+.landpads4{
+    
+    width: 350px;
+    height: 500px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+
+.landpads4 p{
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+
+

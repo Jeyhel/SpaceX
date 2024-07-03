@@ -31,6 +31,7 @@ export const getInfoLandpads = async (id) => {
                 "_id": id
             },
             "options": {
+                "populate": ['launches']
             }
         })
     };

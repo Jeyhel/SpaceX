@@ -461,6 +461,7 @@ const loadLandpads = async (id) => {
     let landpadsInfo = await getInfoLandpads(id);
 
     await InfoLandpads (landpadsInfo);
+    console.log('data landpad', landpadsInfo)
 }
 
 //pagination ships 
