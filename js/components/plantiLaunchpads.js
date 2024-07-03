@@ -7,29 +7,28 @@ export const InfoLaunchpads = async (plusInfo) => {
     document.querySelector(".section__information__2").innerHTML = /*html*/`
     <div class="launchpads2">
 
-        <h3>full_name</h3>
+        <h3>Full name</h3>
         <p> ${plusInfo.full_name} </p>
-        <br>
-    
-        <h3>locality</h3>
+        <hr>
+        <h3>Locality</h3>
         <p> ${plusInfo.locality} </p>
-        <br>
-        <h3>region </h3>
+        <hr>
+        <h3>Region </h3>
         <p> ${plusInfo.region} </p>
-        <br>
-        <h3>latitude</h3>
+        <hr>
+        <h3>Latitude</h3>
         <p> ${plusInfo.latitude} </p>
-        <br>
-        <h3>longitude</h3>
+        <hr>
+        <h3>Longitude</h3>
         <p> ${plusInfo.longitude} </p>
-        <br>
-        <h3>launch_attempts</h3>
+        <hr>
+        <h3>Launch attempts</h3>
         <p> ${plusInfo.launch_attempts} </p>
-        <br>
-        <h3>launch_successes</h3>
+        <hr>
+        <h3>Launch successes</h3>
         <p> ${plusInfo.launch_successes} </p>
-        <br>
-        <h3>rockets</h3>
+        <hr>
+        <h3>Rockets</h3>
         <p> ${plusInfo.rockets} </p>
         <br>
     
@@ -41,15 +40,15 @@ export const InfoLaunchpads = async (plusInfo) => {
     <div class="launchpads3">
 
 
-        <h3>timezone</h3>
+        <h3>Timezone</h3>
         <p> ${plusInfo.timezone} </p>
-
-        <h3>status</h3>
+        <hr>
+        <h3>Status</h3>
         <p> ${plusInfo.status} </p>
-        
-        <h3>details</h3>
+        <hr>
+        <h3>Details</h3>
         <p> ${plusInfo.details} </p>
-        
+        <br>
     </div>`;
     
     
