@@ -10,7 +10,8 @@ export const InfoHistory = async (plusInfo) => {
 
     <h3> Do you want more information?</h3>
     <a href ="${plusInfo.links.article}">
-    <p> Clik here...</p>
+    <br>   
+    <p> Clik here</p>
     </a>
     
     </div>`;
