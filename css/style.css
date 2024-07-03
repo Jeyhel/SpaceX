@@ -1804,4 +1804,43 @@ progress[value]::-moz-progress-bar {
     margin-left: 100px;
 
 }
+.payloads1{
+    margin-top: -150px;  
+    width: 290px;
+    height: 300px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
 
+}
+
+.payloads2{
+    margin-top: -150px;  
+    width: 290px;
+    height: 300px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    padding: 5px 5px;
+    overflow-y: scroll;
+
+}
+.payloads3{
+     
+    width: 400px;
+    height: 210px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: 100px;
+  
+
+}
