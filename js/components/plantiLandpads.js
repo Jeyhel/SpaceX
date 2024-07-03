@@ -15,7 +15,7 @@ export const InfoLandpads = async (plusInfo) => {
     <hr>
     <hr>
      <p> ${plusInfo.details} </p>
-    
+    <br>
     </div>
     `;
 
@@ -78,6 +78,7 @@ export const InfoLandpads = async (plusInfo) => {
         <h3>Launches</h3>
         <hr>
         ${landpadsHTML}
+        <br>
         </div>
     `;
 }

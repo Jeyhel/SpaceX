@@ -31,6 +31,7 @@ export const getInfoShips = async (id) => {
                 "_id": id
             },
             "options": {
+                "populate": ['launches']
             }
         })
     };

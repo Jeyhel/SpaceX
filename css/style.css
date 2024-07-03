@@ -11,7 +11,7 @@
 
 body {
 
-    background-image: url(../storage/img/background.jpg);
+    background-image: url(../storage/img/background2.jpg);
  
 
     font-family: "Roboto-Regular";
@@ -626,6 +626,7 @@ h3{
     grid-template-areas:
         "carusel__colum__1"
         "table__colum__1";
+        
 }
 
 .section__information__2 div:first-child {
@@ -1391,9 +1392,7 @@ progress[value]::-moz-progress-bar {
     color: var(--color--five);
 
 }
-.section__information__2 p {
-    color: var(--color-two);
-}
+
 
 
 .roadster1{
@@ -1492,6 +1491,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    overflow-y: scroll;
 }
 .landpads2{
     margin-top: -150px;  
@@ -1504,6 +1504,8 @@ progress[value]::-moz-progress-bar {
     text-align: center;
     margin-left: 100px;
 }
+.landpads2 p{  color: var(--color--two);}
+
 .landpads3{
     margin-top: -130px;  
     width: 200px;
@@ -1514,11 +1516,35 @@ progress[value]::-moz-progress-bar {
     border-radius: 40px; 
     text-align: center;
     margin-left: -300px;
+}.landpads3 p{
+    color: var(--color--two);
+
 }
 .landpads4{
     
     width: 350px;
-    height: 500px;
+    height: 200px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    overflow-y: scroll;
+
+}
+
+.landpads4 p{
+    color: var(--color--two);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+
+}
+.ships1{
+    
+    width: 350px;
+    height: 130px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1526,14 +1552,49 @@ progress[value]::-moz-progress-bar {
     text-align: center;
 
 }
-
-.landpads4 p{
-
+.ships2{
+    margin-top: -130px;  
+    width: 200px;
+    height: 250px;
+    border: var(--color-1) 5px solid;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    margin-left: 100px
+}
+.ships2 p {
+    color: var(--color--two);
 
 }
+.ships3{
+    margin-top: -130px;  
+    width: 200px;
+    height: 340px;
+    border: var(--color-1) 5px solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: -150px;
+}
+.ships3 p {
+    color: var(--color--two);
 
+}
+.ships4{
+    
+    width: 350px;
+    height: 160px;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    overflow-y: scroll;
 
+}
+.ships4 p {
+    color: var(--color--two);
+
+}

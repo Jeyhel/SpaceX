@@ -21,14 +21,14 @@ document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`
 <div class="cores2">
     <h3>Launches</h3>
     <p> ${plusInfo.launches} </p>
-    <br>
+    <hr>
 
     <h3>Serial</h3>
     <p> ${plusInfo.serial} </p>
-    <br>
+    <hr>
     <h3>Status</h3>
     <p> ${plusInfo.status} </p>
-    <br>
+
 </div>`;
 
 
