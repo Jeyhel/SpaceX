@@ -55,15 +55,18 @@ export const InfoCompany = async (plusInfo) => {
     <h3> Website</h3>
         <a href ="${plusInfo.links.website}"> 
         <p> Read me..</p>
-        </a>
+        </a> <br>
     <h3> Twitter</h3>
         <a href ="${plusInfo.links.twitter}"> 
         <p> Read me..</p>
-        </a>
+        </a> <br>
     <h3> Elon_twitter</h3>
         <a href ="${plusInfo.links.elon_twitter}"> 
         <p> Read me..</p>
         </a>
+        <img id="spacex" src="./storage/img/spacex.jpg" alt=""> 
+
+        <img id="bola" src="./storage/img/bola.gif" alt=""> 
 
 
     </div>`;

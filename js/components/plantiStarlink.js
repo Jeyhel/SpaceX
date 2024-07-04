@@ -65,6 +65,7 @@ export const InfoStarlink = async (plusInfo) => {
         <p> ${plusInfo.spaceTrack.PERIAPSIS} </p>
         <br>
         
+        <img id="xxxxx" src="./storage/img/xxxxx.jpg" alt="">         
         
     </div>`;
     
@@ -93,7 +94,7 @@ export const InfoStarlink = async (plusInfo) => {
         <h3>FILE</h3>
         <p> ${plusInfo.spaceTrack.FILE} </p>
         <br>
-    
+
     </div>
     `;
     

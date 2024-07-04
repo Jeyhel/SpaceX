@@ -2,7 +2,7 @@ export const InfoDragons = async (plusInfo) => {
 
         
     document.querySelector("#header__title").innerHTML = plusInfo.name;
-    
+
     document.querySelector(".nav__description").innerHTML = /*html*/`
     <div class="dragons1">
     <br>
@@ -10,7 +10,8 @@ export const InfoDragons = async (plusInfo) => {
     <hr>
     <p> ${plusInfo.description} </p>
     <br>
-
+    </div>
+    <img id="wow" src="./storage/img/wowww.avif" alt=""> 
 
     `;
 

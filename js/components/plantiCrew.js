@@ -19,6 +19,7 @@ document.querySelector(".section__information__2").innerHTML = /*html*/`
             <h3>Agency</h3>
             <hr>
             <p> ${plusInfo.agency} </p>
+            <br>
         </div>
 </div>`;
 
@@ -56,7 +57,7 @@ document.querySelector(".section__information__2").innerHTML = /*html*/`
  
  document.querySelector(".section__image").innerHTML = /*html*/`
  <div class="crew3">
-    
+    <img src="${plusInfo.image}"referrerpolicy="no-referrer" width=300px heigth=350px>
  </div>
  `;
  

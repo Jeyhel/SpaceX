@@ -13,7 +13,8 @@ export const InfoHistory = async (plusInfo) => {
     <br>   
     <p> Clik here</p>
     </a>
-    
+    <img id="fire" src="./storage/img/fire.jpg" alt=""> 
+
     </div>`;
 
     document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`

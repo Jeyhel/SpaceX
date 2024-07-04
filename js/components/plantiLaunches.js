@@ -8,15 +8,30 @@ export const InfoLaunches = async (plusInfo) => {
     
     document.querySelector(".section__information__2").innerHTML = /*html*/`
     <div class="launches1">
-
+    <br>  <br>  <br>  <br>
         <h3>Reused</h3>
         <p> ${plusInfo.fairings.reused} </p>
-
+        <hr>
         <h3>Recovery Attempt</h3>
         <p> ${plusInfo.fairings.recovery_attempt} </p>
-
+        <hr>
         <h3>Recovered</h3>
-        <p> ${plusInfo.fairings.recovered} </p> <br>
+        <p> ${plusInfo.fairings.recovered} </p> 
+        <hr>
+        <h3>Static_fire_date_utc </h3> 
+        <p>${plusInfo.static_fire_date_utc} </p>
+        <hr>
+        <h3>Static_fire_date_unix </h3> 
+        <p>${plusInfo.static_fire_date_unix} </p>
+        <hr>
+        <h3>Net </h3> 
+        <p>${plusInfo.net} </p>
+        <hr>
+        <h3>Window </h3> 
+        <p>${plusInfo.window} </p>
+        <hr>
+        <h3>Rocket </h3> 
+        <p>${plusInfo.rocket} </p>
 
     </div>`;
 
@@ -28,7 +43,6 @@ document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`
     <h3>Youtube_id</h3>
     <p> ${plusInfo.links.youtube_id} </p>
     <br>
-
     <h3>Youtube</h3>
     <a href = "${plusInfo.links.webcast}"> 
     <p> ..Click here..</p>
@@ -52,21 +66,7 @@ document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`
 document.querySelector(".section__image").innerHTML = /*html*/`
 <div class="launches3">
 
-    <h3>Static_fire_date_utc </h3> 
-    <p>${plusInfo.static_fire_date_utc} </p>
-
-    <h3>Static_fire_date_unix </h3> 
-    <p>${plusInfo.static_fire_date_unix} </p>
-
-    <h3>Net </h3> 
-    <p>${plusInfo.net} </p>
-
-    <h3>Window </h3> 
-    <p>${plusInfo.window} </p>
-
-    <h3>Rocket </h3> 
-    <p>${plusInfo.rocket} </p>
-
+<img id="giflaunches" src="./storage/img/giflaucnhes.gif" alt="">     
 </div>
 `;
 

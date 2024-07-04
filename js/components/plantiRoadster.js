@@ -66,6 +66,8 @@ export const InfoRoadster = async (plusInfo) => {
 
     <h3>Details</h3>
     <p> ${plusInfo.details} </p>
+    <img id="satelite" src="./storage/img/satelite.jpg" alt="">         
+
 
     </div>`;
     

@@ -1422,51 +1422,185 @@ progress[value]::-moz-progress-bar {
     font-size: 20px;
 
 }
-
+.crew3::-webkit-scrollbar {
+    display: none;
+ 
+    
+}
+.crew3 {
+    margin-left: 110px;
+}
 .launches1{
-    height: 220px;
-    margin-top: -50px;
-    background-color: var(--color-1);
+    height: 600px;
+    margin-top: -360px;
+    background-color:#8409bca8;
     border-radius: 40px;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    overflow-y: scroll;
   
-    
 }
+
 .launches2{
-    margin-top: -30px;
+    margin-top: -290px;
     width: 400px;
     height: 400px;
-    background-color: var(--color-1);
+    background-color:#8409bca8;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-
+    
 }
-.launches3{
-    margin-left: 70px;
-    width: 400px;
-    height: 270px;
-    background-color: var(--color-1);
+
+#giflaunches{
+    
+    width: 300px;
+    height: 290px;
+    border: var(--color-1) 5px solid;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    margin-left: 90px;
+  
+}
+#misil{
+    
+    width: 300px;
+    height: 600px;
+    background-color:#8409bca8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-left: -420px;
+  
+}
+#coresimg{
+    
+    width: 300px;
+    height: 300px;
+    background-color:#8409bca8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: 90px;
+    margin-left: -350px;
+  
+}
+#meteorito{
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 270px;
+    border: var(--color-1) 5px solid;
+  
+}
 
+#bola{
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: -310px;
+    margin-left: -560px;
+  
+}
+#spacex{
+    
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -600px;
+    border: var(--color-1) 5px solid;
+  
+}
+#fire{
+    
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: 70px;
+    margin-left: -60px;
+    border: var(--color-1) 5px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+#fire:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+#wow{
+    
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: 70px;
+    border: var(--color-1) 5px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+#wow:hover{  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+#satelite{
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px; 
+    text-align: center;
+    margin-top: -60px;
+    margin-left: -485px;
+    border: var(--color-1) 5px solid;
+  
+}
+#xxxxx{
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    border-radius: 40px; 
+    margin-top: -100px;
+    margin-left: -425px;
+    border: var(--color-1) 5px solid;
+  
 }
 .cores1{
 
     width: 400px;
-    height: 150px;
+    height: 200px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    margin-top: -200px;
 }
 .cores2{
 
@@ -1479,16 +1613,20 @@ progress[value]::-moz-progress-bar {
     text-align: center;
 }
 
-.cores3{
-
-    width: 400px;
-    height: 70px;
-    background-color: var(--color-1);
+#gifcores {
+    
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    margin-left: 50px;
+    margin-top: -300px;
+
+
 }
+
 .landpads1{
 
     width: 400px;
@@ -1526,6 +1664,10 @@ progress[value]::-moz-progress-bar {
 }.landpads3 p{
     color: var(--color--two);
 
+}
+.launches3::-webkit-scrollbar {
+    display: none;
+ 
 }
 .landpads4{
     
@@ -1634,9 +1776,9 @@ progress[value]::-moz-progress-bar {
     color: var(--color--two);
 }
 .company3{
-    margin-top: -110px;  
+    margin-top: -100px;  
     width: 200px;
-    height: 300px;
+    height: 270px;
     border: var(--color-1) 5px solid;
     display: flex;
     flex-direction: column;

@@ -32,7 +32,8 @@ export const InfoShips = async (plusInfo) => {
         <h3>Type</h3>
         <p> ${plusInfo.type} </p>
         <br>
-    
+        <img id="meteorito" src="./storage/img/meteorito.avif" alt=""> 
+
     </div>`;
     
     
