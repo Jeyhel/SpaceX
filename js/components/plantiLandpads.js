@@ -59,9 +59,14 @@ export const InfoLandpads = async (plusInfo) => {
     <h3>Latitude</h3>
         <p> ${plusInfo.latitude} </p>
         <br>
-        <img id="coresimg" src="./storage/img/coresimg.gif" alt="">         
         </div>`;
 
+
+           document.querySelector(".section__image").innerHTML = /*html*/`
+            <div class="landpads6"> 
+        <img src="${plusInfo.images.large}"referrerpolicy="no-referrer" width=300px heigth=350px>
+    </div> 
+    `;
     
     const land = document.getElementById('information__2')
     let landpadsHTML = '';

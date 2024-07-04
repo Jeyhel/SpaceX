@@ -20,6 +20,8 @@ export const getLandpadsAllId = async () => {
     return docs;
 }
 
+
+
 export const getInfoLandpads = async (id) => {
     const config = {
         method: 'POST',
