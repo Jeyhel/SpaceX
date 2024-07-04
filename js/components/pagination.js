@@ -292,7 +292,8 @@ export const pageCapsulas = async () => {
             e.preventDefault();
             if (e.target.tagName === 'A') {
                 const id = e.target.dataset.id;
-                if (id) {
+                 const type = e.target.dataset.type; 
+                    if (id && type === 'capsules') {
                     await loadCapsule(capsules[id].id);
                 }
             }
