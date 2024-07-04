@@ -8,7 +8,6 @@ export const InfoLaunches = async (plusInfo) => {
     
     document.querySelector(".section__information__2").innerHTML = /*html*/`
     <div class="launches1">
-    <br>  <br>  <br>  <br>
         <h3>Reused</h3>
         <p> ${plusInfo.fairings.reused} </p>
         <hr>
@@ -32,7 +31,7 @@ export const InfoLaunches = async (plusInfo) => {
         <hr>
         <h3>Rocket </h3> 
         <p>${plusInfo.rocket} </p>
-
+       
     </div>`;
 
 
@@ -42,22 +41,22 @@ document.querySelector(".sucess_rate_rocket").innerHTML = /*html*/`
 
     <h3>Youtube_id</h3>
     <p> ${plusInfo.links.youtube_id} </p>
-    <br>
+    <hr>
     <h3>Youtube</h3>
     <a href = "${plusInfo.links.webcast}"> 
-    <p> ..Click here..</p>
+    <p> Click here</p>
     </a>
-    <br>
+    <hr>
 
     <h3>Article</h3>
     <a href = "${plusInfo.links.article}"> 
-    <p> ..Click here..</p>
+    <p> Click here</p>
     </a>
-    <br>
+    <hr>
 
     <h3>Wikipedia</h3>
     <a href = "${plusInfo.links.wikipedia}"> 
-    <p> ..Click here..</p>
+    <p> Click here</p>
     </a> <br>
 
 </div>`;

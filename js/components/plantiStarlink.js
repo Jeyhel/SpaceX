@@ -72,26 +72,26 @@ export const InfoStarlink = async (plusInfo) => {
     
     document.querySelector(".information__item").innerHTML = /*html*/`
     <div class="starlink4">
-    
-        <h3>OBJECT TYPE</h3>
+
+        <h4>OBJECT TYPE</h4>
         <p> ${plusInfo.spaceTrack.OBJECT_TYPE} </p>
         <hr>   <br>      
-        <h3>RCS SIZE</h3>
+        <h4>RCS SIZE</h4>
         <p> ${plusInfo.spaceTrack.RCS_SIZE} </p>
         <hr>   <br>
-        <h3>OUNTRY CODE</h3>
+        <h4>OUNTRY CODE</h4>
         <p> ${plusInfo.spaceTrack.COUNTRY_CODE} </p>
         <hr>   <br>
-        <h3>SITE</h3>
+        <h4>SITE</h4>
         <p> ${plusInfo.spaceTrack.SITE} </p>
         <hr>   <br>
-        <h3>DECAY DATE</h3>
+        <h4>DECAY DATE</h4>
         <p> ${plusInfo.spaceTrack.DECAY_DATE} </p>
         <hr>   <br>
-        <h3>LAUNCH DATE</h3>
+        <h4>LAUNCH DATE</h4>
         <p> ${plusInfo.spaceTrack.LAUNCH_DATE} </p>
         <hr>   <br>
-        <h3>FILE</h3>
+        <h4>FILE</h4>
         <p> ${plusInfo.spaceTrack.FILE} </p>
         <br>
 

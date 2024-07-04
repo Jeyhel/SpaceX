@@ -875,15 +875,7 @@ h3{
 
 }
 
-.information__buttom {
-    background-color: #c3c0e4;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-}
+
 
 .buttom__paginacion {
     display: inline-block;
@@ -1176,25 +1168,32 @@ progress[value]::-moz-progress-bar {
 </div> */
 
 
+#pagination {
+    background-color: #c3c0e497;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
 
+}
 
 #pagination button {
     padding: 10px 15px;
-    background-color: var(--color-4);
-    color: #fff;
+    color: #ffffff11;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  
 }
 
 #pagination button:disabled {
-    background-color: var(--color-4);
+    background-color: var(--color--two);
 }
 
-#pagination button:hover:not(:disabled) {
-    background-color: #0056b3;
-}
+
 
 #pagination img {
     width: 30px;
@@ -1431,8 +1430,8 @@ progress[value]::-moz-progress-bar {
     margin-left: 110px;
 }
 .launches1{
-    height: 600px;
-    margin-top: -360px;
+    height: 290px;
+    margin-top: -100px;
     background-color:#8409bca8;
     border-radius: 40px;
     padding-top: 10px;
@@ -1445,9 +1444,9 @@ progress[value]::-moz-progress-bar {
 }
 
 .launches2{
-    margin-top: -290px;
+    margin-top: -100px;
     width: 400px;
-    height: 400px;
+    height: 320px;
     background-color:#8409bca8;
     display: flex;
     flex-direction: column;
@@ -1489,20 +1488,20 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: -350px;
   
 }
 #meteorito{
     
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: 50px;
-    margin-left: 270px;
+    margin-top: 30px;
+    margin-left: 295px;
     border: var(--color-1) 5px solid;
   
 }
@@ -1527,7 +1526,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: -600px;
     border: var(--color-1) 5px solid;
   
@@ -1540,7 +1539,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: 70px;
+    margin-top: 45px;
     margin-left: -60px;
     border: var(--color-1) 5px solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1559,7 +1558,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
     border: var(--color-1) 5px solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   
@@ -1569,32 +1568,32 @@ progress[value]::-moz-progress-bar {
 }
 #satelite{
     
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height:  360px;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-top: -60px;
-    margin-left: -485px;
+    margin-top: 40px;
+    margin-left: -425px;
     border: var(--color-1) 5px solid;
   
 }
 #xxxxx{
     
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     display: flex;
     border-radius: 40px; 
     margin-top: -100px;
-    margin-left: -425px;
+    margin-left: -369px;
     border: var(--color-1) 5px solid;
   
 }
 .cores1{
 
     width: 400px;
-    height: 200px;
+    height: 150px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1605,7 +1604,7 @@ progress[value]::-moz-progress-bar {
 .cores2{
 
     width: 400px;
-    height: 300px;
+    height: 220px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -1615,14 +1614,14 @@ progress[value]::-moz-progress-bar {
 
 #gifcores {
     
-    width: 250px;
-    height: 250px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-left: 50px;
-    margin-top: -300px;
+    margin-left: -50px;
+    margin-top: -290px;
 
 
 }
@@ -1758,7 +1757,7 @@ progress[value]::-moz-progress-bar {
 
 }
 .company1 p {
-    color: var(--color-1--rgba);
+    color: var(--color--two);
 
 }
 .company2{
@@ -1772,7 +1771,7 @@ progress[value]::-moz-progress-bar {
     text-align: center;
     margin-left: 100px;
 }
-.company2{
+.company2 p{
     color: var(--color--two);
 }
 .company3{
@@ -1801,7 +1800,7 @@ progress[value]::-moz-progress-bar {
 
 }
 .company4 p {
-    color: var(--color-1--rgba);
+    color: var(--color--two);
 
 }
 .dragons1{
@@ -1817,7 +1816,7 @@ progress[value]::-moz-progress-bar {
 
 }
 .dragons2{
-    margin-top: -150px;
+    margin-top: -200px;   
     width: 200px;
     height: 400px;
     border: var(--color-1) 5px solid;
@@ -1832,15 +1831,20 @@ progress[value]::-moz-progress-bar {
 
 }
 .dragons3{
-    margin-top: -130px;   
+    margin-top: -200px;   
     width: 230px;
-    height: 620px;
+    height: 410px;
     border: var(--color-1) 5px solid;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-left: -150px
+    margin-left: -150px;
+    overflow-y: scroll;
+}
+.dragons3::-webkit-scrollbar {
+    display: none;
+ 
 }
 .dragons3 h4, p {
     color: var(--color--two);
@@ -1856,6 +1860,7 @@ progress[value]::-moz-progress-bar {
     text-align: center;
     padding: 5px 5px;
     overflow-y: scroll;
+    margin-top: 90px;
 
 }
 .dragons4 p{
@@ -1870,6 +1875,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+  
 
 }
 .dragons5 h4, p {
@@ -1886,6 +1892,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
+    margin-top: -100px;
 
 }
 .history1 h4, p {
@@ -1908,9 +1915,9 @@ progress[value]::-moz-progress-bar {
 
 }
 .launchpads2{
-    margin-top: -300px;  
+    margin-top: -150px;  
     width: 290px;
-    height: 480px;
+    height: 350px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -2006,19 +2013,20 @@ progress[value]::-moz-progress-bar {
 
 .roadster3{
     margin-top: -130px;  
-    width: 200px;
-    height: 480px;
+    width: 300px;
+    height: 330px;
     border: var(--color-1) 5px solid;
     display: flex;
     flex-direction: column;
     border-radius: 40px; 
     text-align: center;
-    margin-left: -100px
+    margin-left: -100px;
+    padding: 15px 15px;
 }
 .roadster4{
  
     width: 290px;
-    height: 500px;
+    height:300px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -2026,6 +2034,10 @@ progress[value]::-moz-progress-bar {
     text-align: center;
     padding: 5px 5px;
     overflow-y: scroll;
+
+}.roadster4 h4 {
+    color: var(--color--two);
+
 
 }
 .starlink1{
@@ -2042,7 +2054,7 @@ progress[value]::-moz-progress-bar {
 
 }
 .starlink2{
-    margin-top: -130px;  
+    margin-top: -200px;  
     width: 320px;
     height: 420px;
     border: var(--color-1) 5px solid;
@@ -2053,7 +2065,7 @@ progress[value]::-moz-progress-bar {
     margin-left: 100px
 }
 .starlink3{
-    margin-top: -130px;  
+    margin-top: -190px;  
     width: 320px;
     height: 490px;
     border: var(--color-1) 5px solid;
@@ -2066,7 +2078,7 @@ progress[value]::-moz-progress-bar {
 .starlink4{
    
     width: 290px;
-    height: 500px;
+    height: 410px;
     background-color: var(--color-1);
     display: flex;
     flex-direction: column;
@@ -2075,4 +2087,7 @@ progress[value]::-moz-progress-bar {
     padding: 10px 10px;
     overflow-y: scroll;
 
+}
+.starlink4 h4 {
+    color: var(--color--two);
 }

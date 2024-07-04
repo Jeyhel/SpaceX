@@ -105,7 +105,7 @@ export const InfoDragons = async (plusInfo) => {
     document.querySelector(".section__image").innerHTML = /*html*/`
     <div class="dragons5">
 
-    <h3>More Information... </h3>
+    <h3>More Information </h3>
   
     <a href ="${plusInfo.wikipedia}">
     <p> Clik here</p>

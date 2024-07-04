@@ -65,6 +65,7 @@ export const InfoRoadster = async (plusInfo) => {
     <div class="roadster3">
 
     <h3>Details</h3>
+    <hr>
     <p> ${plusInfo.details} </p>
     <img id="satelite" src="./storage/img/satelite.jpg" alt="">         
 
@@ -75,27 +76,27 @@ export const InfoRoadster = async (plusInfo) => {
     document.querySelector(".information__item").innerHTML = /*html*/`
     <div class="roadster4">
     <br>
-        <h3>Eccentricity</h3>
+        <h4>Eccentricity</h4>
         <p> ${plusInfo.eccentricity} </p>
-        <hr>
-        <h3>Inclination</h3>
+        <hr> <br>
+        <h4>Inclination</h4>
         <p> ${plusInfo.inclination} </p>
-        <hr>
-        <h3>Longitude</h3>
+        <hr> <br>
+        <h4>Longitude</h4>
         <p> ${plusInfo.longitude} </p>
-        <hr>
-        <h3>Earth_distance_km</h3>
+        <hr> <br>
+        <h4>Earth distance km</h4>
         <p> ${plusInfo.earth_distance_km} </p>
-        <hr>
-        <h3>Earth_distance_mi</h3>
+        <hr> <br>
+        <h4>Earth distance mi</h4>
         <p> ${plusInfo.earth_distance_mi} </p>
-        <hr>
-        <h3>Mars_distance_km</h3>
+        <hr> <br>
+        <h4>Mars distance km</h4>
         <p> ${plusInfo.mars_distance_km} </p>
-        <hr>
-        <h3>Mars_distance_mi</h3>
+        <hr> <br>
+        <h4>Mars distance mi</h4>
         <p> ${plusInfo.mars_distance_mi} </p>
-    
+        <br>
     </div>
     `;
     
