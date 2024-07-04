@@ -12,7 +12,9 @@
 body {
 
     background-image: url(../storage/img/background2.jpg);
- 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     font-family: "Roboto-Regular";
 
