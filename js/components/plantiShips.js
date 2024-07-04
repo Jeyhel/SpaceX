@@ -12,7 +12,7 @@ export const InfoShips = async (plusInfo) => {
     <h3> More information... </h3> 
     <br>
     <a href ="${plusInfo.link}">
-    <p> Clik here...</p>
+    <p> Clik here</p>
     </a>
     
     </div>
@@ -32,7 +32,6 @@ export const InfoShips = async (plusInfo) => {
         <h3>Type</h3>
         <p> ${plusInfo.type} </p>
         <br>
-        <img id="meteorito" src="./storage/img/meteorito.avif" alt=""> 
 
     </div>`;
     
@@ -56,6 +55,12 @@ export const InfoShips = async (plusInfo) => {
     </div>`;
     
     
+            document.querySelector(".section__image").innerHTML = /*html*/`
+            <div class="ships5"> 
+        <img src="${plusInfo.image}"referrerpolicy="no-referrer" width=300px heigth=350px>
+    </div> 
+    `;
+    
     const ship = document.getElementById('information__2')
     let shipsHTML = '';
     launches.forEach(element => {
@@ -74,13 +79,12 @@ export const InfoShips = async (plusInfo) => {
         ${shipsHTML}
         <br>
         </div>
-    `;
-}
+        `;
 
-document.querySelector(".information__item").innerHTML = ships
-    
-    
-    
+}
+        document.querySelector(".information__item").innerHTML = ships
+
+
     
         
     
